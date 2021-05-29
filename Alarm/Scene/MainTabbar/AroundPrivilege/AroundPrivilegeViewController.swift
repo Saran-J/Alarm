@@ -1,11 +1,19 @@
 import UIKit
 
-protocol SplashScreenDisplayLogic: class {
+protocol AroundPrivilegeDisplayLogic: class {
 }
 
-class SplashScreenViewController: UIViewController, SplashScreenDisplayLogic {
-    var interactor: SplashScreenBusinessLogic?
-    var router: (NSObjectProtocol & SplashScreenRoutingLogic & SplashScreenDataPassing)?
+class AroundPrivilegeViewController: UIViewController, AroundPrivilegeDisplayLogic {
+    var interactor: AroundPrivilegeBusinessLogic?
+    var router: (NSObjectProtocol & AroundPrivilegeRoutingLogic & AroundPrivilegeDataPassing)?
+    
+    static func initFromStoryboard() -> AroundPrivilegeViewController {
+        let viewController = UIStoryboard(
+            name: "AroundPrivilege",
+            bundle: nil)
+            .instantiateInitialViewController() as! AroundPrivilegeViewController
+        return viewController
+    }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -19,9 +27,9 @@ class SplashScreenViewController: UIViewController, SplashScreenDisplayLogic {
     
     private func setup() {
         let viewController = self
-        let interactor = SplashScreenInteractor()
-        let presenter = SplashScreenPresenter()
-        let router = SplashScreenRouter()
+        let interactor = AroundPrivilegeInteractor()
+        let presenter = AroundPrivilegePresenter()
+        let router = AroundPrivilegeRouter()
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
@@ -41,10 +49,5 @@ class SplashScreenViewController: UIViewController, SplashScreenDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    @IBAction func onTap() {
-        print("route")
-        router?.routeToMainTab()
     }
 }
