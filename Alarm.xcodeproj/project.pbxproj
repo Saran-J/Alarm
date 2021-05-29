@@ -122,7 +122,7 @@
 		0FA138BC2662BB68004F6A2F /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
-				0FA139192662BEC5004F6A2F /* SplashScreen */,
+				0FA139402662C9EA004F6A2F /* Scene */,
 				0FA138BD2662BB68004F6A2F /* AppDelegate.swift */,
 				0FA138C92662BB69004F6A2F /* Assets.xcassets */,
 				0FA138CB2662BB69004F6A2F /* LaunchScreen.storyboard */,
@@ -160,6 +160,14 @@
 				0FA139222662BEDF004F6A2F /* SplashScreenInteractor.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		0FA139402662C9EA004F6A2F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0FA139192662BEC5004F6A2F /* SplashScreen */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		26732DEE7E9AD3A12E240DD1 /* Pods */ = {
