@@ -1,4 +1,5 @@
 import UIKit
+import JGProgressHUD
 
 protocol BaseViewControllerProtocol: class {
     func displayMessage(title: String, message: String)
@@ -7,9 +8,12 @@ protocol BaseViewControllerProtocol: class {
         message: String,
         callback: @escaping () -> Void
     )
+    func displayLoading(_ message: String)
+    func hideLoading()
 }
 
 class BaseViewController: UIViewController, BaseViewControllerProtocol {
+    let hud = JGProgressHUD()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -34,6 +38,15 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
             .setOkButtn("ok", callback: callback)
             .build()
         present(alert, animated: true, completion: nil)
+    }
+    
+    func displayLoading(_ message: String = "") {
+        hud.textLabel.text = message
+        hud.show(in: self.view)
+    }
+    
+    func hideLoading() {
+        hud.dismiss()
     }
 }
 
