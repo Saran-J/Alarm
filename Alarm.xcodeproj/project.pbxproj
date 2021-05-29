@@ -16,6 +16,9 @@
 		0FA138CD2662BB69004F6A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA138CB2662BB69004F6A2F /* LaunchScreen.storyboard */; };
 		0FA138D82662BB69004F6A2F /* AlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA138D72662BB69004F6A2F /* AlarmTests.swift */; };
 		0FA138E32662BB69004F6A2F /* AlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA138E22662BB69004F6A2F /* AlarmUITests.swift */; };
+		1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */; };
+		7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */; };
+		9DBE53E65F9F1BE93B8AFA3C /* Pods_Alarm_AlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,15 @@
 		0FA138DE2662BB69004F6A2F /* AlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA138E22662BB69004F6A2F /* AlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmUITests.swift; sourceTree = "<group>"; };
 		0FA138E42662BB69004F6A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.debug.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.release.xcconfig"; sourceTree = "<group>"; };
+		849A9054BB9E5DD73074B856 /* Pods-Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.release.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.release.xcconfig"; sourceTree = "<group>"; };
+		95AB18E37615805A67D51883 /* Pods-Alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.debug.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		9E4B0118A53B39077EDA60E5 /* Pods-Alarm-AlarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm-AlarmUITests.release.xcconfig"; path = "Target Support Files/Pods-Alarm-AlarmUITests/Pods-Alarm-AlarmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarm_AlarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F274DF6F8812788768AB142F /* Pods-Alarm-AlarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm-AlarmUITests.debug.xcconfig"; path = "Target Support Files/Pods-Alarm-AlarmUITests/Pods-Alarm-AlarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBE53E65F9F1BE93B8AFA3C /* Pods_Alarm_AlarmUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				0FA138D62662BB69004F6A2F /* AlarmTests */,
 				0FA138E12662BB69004F6A2F /* AlarmUITests */,
 				0FA138BB2662BB68004F6A2F /* Products */,
+				26732DEE7E9AD3A12E240DD1 /* Pods */,
+				7A8D6A883C6420F7990CF186 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,30 @@
 			path = AlarmUITests;
 			sourceTree = "<group>";
 		};
+		26732DEE7E9AD3A12E240DD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95AB18E37615805A67D51883 /* Pods-Alarm.debug.xcconfig */,
+				849A9054BB9E5DD73074B856 /* Pods-Alarm.release.xcconfig */,
+				F274DF6F8812788768AB142F /* Pods-Alarm-AlarmUITests.debug.xcconfig */,
+				9E4B0118A53B39077EDA60E5 /* Pods-Alarm-AlarmUITests.release.xcconfig */,
+				5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */,
+				661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A8D6A883C6420F7990CF186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */,
+				A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */,
+				A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FA138E72662BB69004F6A2F /* Build configuration list for PBXNativeTarget "Alarm" */;
 			buildPhases = (
+				00B2399D94C97C6F667E3BD2 /* [CP] Check Pods Manifest.lock */,
 				0FA138B62662BB68004F6A2F /* Sources */,
 				0FA138B72662BB68004F6A2F /* Frameworks */,
 				0FA138B82662BB68004F6A2F /* Resources */,
@@ -155,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FA138EA2662BB69004F6A2F /* Build configuration list for PBXNativeTarget "AlarmTests" */;
 			buildPhases = (
+				3327E9215D560A07895BA3F8 /* [CP] Check Pods Manifest.lock */,
 				0FA138CF2662BB69004F6A2F /* Sources */,
 				0FA138D02662BB69004F6A2F /* Frameworks */,
 				0FA138D12662BB69004F6A2F /* Resources */,
@@ -173,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FA138ED2662BB69004F6A2F /* Build configuration list for PBXNativeTarget "AlarmUITests" */;
 			buildPhases = (
+				89CD20B438D67895449D7F08 /* [CP] Check Pods Manifest.lock */,
 				0FA138DA2662BB69004F6A2F /* Sources */,
 				0FA138DB2662BB69004F6A2F /* Frameworks */,
 				0FA138DC2662BB69004F6A2F /* Resources */,
@@ -255,6 +299,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B2399D94C97C6F667E3BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3327E9215D560A07895BA3F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlarmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89CD20B438D67895449D7F08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alarm-AlarmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FA138B62662BB68004F6A2F /* Sources */ = {
@@ -437,6 +550,7 @@
 		};
 		0FA138E82662BB69004F6A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95AB18E37615805A67D51883 /* Pods-Alarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +570,7 @@
 		};
 		0FA138E92662BB69004F6A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849A9054BB9E5DD73074B856 /* Pods-Alarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +590,7 @@
 		};
 		0FA138EB2662BB69004F6A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +613,7 @@
 		};
 		0FA138EC2662BB69004F6A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +636,7 @@
 		};
 		0FA138EE2662BB69004F6A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F274DF6F8812788768AB142F /* Pods-Alarm-AlarmUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +657,7 @@
 		};
 		0FA138EF2662BB69004F6A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4B0118A53B39077EDA60E5 /* Pods-Alarm-AlarmUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
