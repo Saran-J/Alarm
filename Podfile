@@ -9,6 +9,7 @@ target 'Alarm' do
   pod 'RxCocoa'
   pod 'Kingfisher', '~> 6.0'
   pod 'SkyFloatingLabelTextField'
+  pod 'JGProgressHUD'
 
   # Pods for Alarm
 
