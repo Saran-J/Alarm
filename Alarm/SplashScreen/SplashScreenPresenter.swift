@@ -8,10 +8,8 @@
 import UIKit
 
 protocol SplashScreenPresentationLogic {
-  
 }
 
 class SplashScreenPresenter: SplashScreenPresentationLogic {
-  weak var viewController: SplashScreenDisplayLogic?
-  
+    weak var viewController: SplashScreenDisplayLogic?
 }
