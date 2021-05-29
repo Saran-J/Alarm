@@ -1,23 +1,25 @@
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        
-        self.setupViewControllers()
+        self.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+        self.setupViewControllers()
     }
     
     func setupViewControllers() {
-        if !(self.viewControllers?.isEmpty ?? false) {
+        guard self.viewControllers == nil else {
             return
         }
         let aroundVC = AroundPrivilegeViewController.initFromStoryboard()
-        self.viewControllers = [aroundVC]
+        self.setViewControllers([aroundVC], animated: false)
     }
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        }
 }

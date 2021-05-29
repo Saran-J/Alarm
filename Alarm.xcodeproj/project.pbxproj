@@ -249,6 +249,7 @@
 				0FA138B82662BB68004F6A2F /* Resources */,
 				35AC64114EFAF33FB93BD0A8 /* [CP] Embed Pods Frameworks */,
 				0FA1392C2662C25B004F6A2F /* ShellScript */,
+				D8699E9D1B3F1F851B5697CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +288,7 @@
 				0FA138DB2662BB69004F6A2F /* Frameworks */,
 				0FA138DC2662BB69004F6A2F /* Resources */,
 				9924CF88DA87E7B41AA4C263 /* [CP] Embed Pods Frameworks */,
+				71EBC4592C8121B204D22857 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -447,6 +449,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alarm/Pods-Alarm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		71EBC4592C8121B204D22857 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alarm-AlarmUITests/Pods-Alarm-AlarmUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alarm-AlarmUITests/Pods-Alarm-AlarmUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alarm-AlarmUITests/Pods-Alarm-AlarmUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		89CD20B438D67895449D7F08 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,6 +503,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alarm-AlarmUITests/Pods-Alarm-AlarmUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8699E9D1B3F1F851B5697CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alarm/Pods-Alarm-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alarm/Pods-Alarm-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alarm/Pods-Alarm-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

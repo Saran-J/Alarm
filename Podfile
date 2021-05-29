@@ -10,6 +10,7 @@ target 'Alarm' do
   pod 'Kingfisher', '~> 6.0'
   pod 'SkyFloatingLabelTextField'
   pod 'JGProgressHUD'
+  pod 'GoogleMaps'
 
   # Pods for Alarm
 
