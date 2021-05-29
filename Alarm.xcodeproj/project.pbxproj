@@ -19,6 +19,7 @@
 		0FA139272662BEDF004F6A2F /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139212662BEDF004F6A2F /* SplashScreenViewController.swift */; };
 		0FA139282662BEDF004F6A2F /* SplashScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139222662BEDF004F6A2F /* SplashScreenInteractor.swift */; };
 		0FA139432662CA4B004F6A2F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139422662CA4B004F6A2F /* MainTabBarController.swift */; };
+		0FA139482662CAAD004F6A2F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139472662CAAD004F6A2F /* BaseViewController.swift */; };
 		1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */; };
 		7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */; };
 		9DBE53E65F9F1BE93B8AFA3C /* Pods_Alarm_AlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */; };
@@ -60,6 +61,7 @@
 		0FA139212662BEDF004F6A2F /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		0FA139222662BEDF004F6A2F /* SplashScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenInteractor.swift; sourceTree = "<group>"; };
 		0FA139422662CA4B004F6A2F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0FA139472662CAAD004F6A2F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.debug.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		849A9054BB9E5DD73074B856 /* Pods-Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.release.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				0FA139412662CA1E004F6A2F /* MainTabbar */,
 				0FA139192662BEC5004F6A2F /* SplashScreen */,
+				0FA139472662CAAD004F6A2F /* BaseViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				0FA139432662CA4B004F6A2F /* MainTabBarController.swift in Sources */,
 				0FA139272662BEDF004F6A2F /* SplashScreenViewController.swift in Sources */,
 				0FA139262662BEDF004F6A2F /* SplashScreenModels.swift in Sources */,
+				0FA139482662CAAD004F6A2F /* BaseViewController.swift in Sources */,
 				0FA138BE2662BB68004F6A2F /* AppDelegate.swift in Sources */,
 				0FA139282662BEDF004F6A2F /* SplashScreenInteractor.swift in Sources */,
 				0FA138C82662BB68004F6A2F /* Alarm.xcdatamodeld in Sources */,
