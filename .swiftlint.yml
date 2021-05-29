@@ -10,6 +10,8 @@ disabled_rules:
   - todo
   - unused_capture_list
   - nesting
+  - force_cast
+  - force_try
 
 opt_in_rules:
   - array_init
@@ -68,8 +70,6 @@ attributes:
     - "@NSManaged"
     - "@objc"
 
-force_cast: warning
-force_try: warning
 function_body_length:
     warning: 100
 
