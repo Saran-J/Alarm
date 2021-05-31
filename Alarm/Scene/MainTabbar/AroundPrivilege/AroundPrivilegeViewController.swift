@@ -1,5 +1,6 @@
 import UIKit
 import GoogleMaps
+import RxSwift
 
 protocol AroundPrivilegeDisplayLogic: class {
 }
@@ -7,7 +8,11 @@ protocol AroundPrivilegeDisplayLogic: class {
 class AroundPrivilegeViewController: UIViewController, AroundPrivilegeDisplayLogic {
     var interactor: AroundPrivilegeBusinessLogic?
     var router: (NSObjectProtocol & AroundPrivilegeRoutingLogic & AroundPrivilegeDataPassing)?
-    
+    var locationManager = LocationManager()
+    let zoomConst: Float = 6.0
+    let disposeBag = DisposeBag()
+    lazy var camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: zoomConst)
+    lazy var mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
     static func initFromStoryboard() -> AroundPrivilegeViewController {
         let viewController = UIStoryboard(
             name: "AroundPrivilege",
@@ -51,17 +56,30 @@ class AroundPrivilegeViewController: UIViewController, AroundPrivilegeDisplayLog
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGoogleMap()
+        bindingLocationManager()
+        locationManager.requestLocationAuthorization()
     }
     
     func setupGoogleMap() {
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
         self.view.addSubview(mapView)
-        
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
+    }
+    
+    func bindingLocationManager() {
+        locationManager.locationTracking
+        .bind { [unowned self] location in
+            self.mapView.animate(
+                to: GMSCameraPosition(
+                    latitude: location.coordinate.latitude,
+                    longitude: location.coordinate.longitude,
+                    zoom: self.zoomConst ))
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(
+                latitude: location.coordinate.latitude,
+                longitude: location.coordinate.longitude)
+            marker.title = "Sydney"
+            marker.snippet = "Australia"
+            marker.map = self.mapView
+        }
+        .disposed(by: disposeBag)
     }
 }

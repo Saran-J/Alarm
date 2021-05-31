@@ -27,6 +27,7 @@
 		0FA139922662CFC0004F6A2F /* AroundPrivilegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1398C2662CFC0004F6A2F /* AroundPrivilegeViewController.swift */; };
 		0FA139932662CFC0004F6A2F /* AroundPrivilegeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */; };
 		0FA1399B2662CFEA004F6A2F /* AroundPrivilege.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */; };
+		0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139AF2662DD4B004F6A2F /* LocationManager.swift */; };
 		1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */; };
 		7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */; };
 		9DBE53E65F9F1BE93B8AFA3C /* Pods_Alarm_AlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */; };
@@ -76,6 +77,7 @@
 		0FA1398C2662CFC0004F6A2F /* AroundPrivilegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundPrivilegeViewController.swift; sourceTree = "<group>"; };
 		0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundPrivilegeInteractor.swift; sourceTree = "<group>"; };
 		0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AroundPrivilege.storyboard; sourceTree = "<group>"; };
+		0FA139AF2662DD4B004F6A2F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.debug.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		849A9054BB9E5DD73074B856 /* Pods-Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.release.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F04459226655A5C00B5B43C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		0F04459326655A7100B5B43C /* ValidatePin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ValidatePin;
+			sourceTree = "<group>";
+		};
 		0FA138B12662BB68004F6A2F = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +199,9 @@
 		0FA139402662C9EA004F6A2F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0F04459326655A7100B5B43C /* ValidatePin */,
+				0F04459226655A5C00B5B43C /* Register */,
+				0FA139AE2662DD3A004F6A2F /* Component */,
 				0FA139412662CA1E004F6A2F /* MainTabbar */,
 				0FA139192662BEC5004F6A2F /* SplashScreen */,
 				0FA139472662CAAD004F6A2F /* BaseViewController.swift */,
@@ -211,6 +230,14 @@
 				0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */,
 			);
 			path = AroundPrivilege;
+			sourceTree = "<group>";
+		};
+		0FA139AE2662DD3A004F6A2F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0FA139AF2662DD4B004F6A2F /* LocationManager.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		26732DEE7E9AD3A12E240DD1 /* Pods */ = {
@@ -530,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA1398E2662CFC0004F6A2F /* AroundPrivilegePresenter.swift in Sources */,
+				0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */,
 				0FA139242662BEDF004F6A2F /* SplashScreenWorker.swift in Sources */,
 				0FA139252662BEDF004F6A2F /* SplashScreenRouter.swift in Sources */,
 				0FA139432662CA4B004F6A2F /* MainTabBarController.swift in Sources */,
