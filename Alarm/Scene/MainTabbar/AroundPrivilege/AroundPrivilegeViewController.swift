@@ -9,7 +9,7 @@ class AroundPrivilegeViewController: UIViewController, AroundPrivilegeDisplayLog
     var interactor: AroundPrivilegeBusinessLogic?
     var router: (NSObjectProtocol & AroundPrivilegeRoutingLogic & AroundPrivilegeDataPassing)?
     var locationManager = LocationManager()
-    let zoomConst: Float = 6.0
+    let zoomConst: Float = 12.0
     let disposeBag = DisposeBag()
     lazy var camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: zoomConst)
     lazy var mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
