@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F04459A26655BE100B5B43C /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459426655BE100B5B43C /* RegisterPresenter.swift */; };
+		0F04459B26655BE100B5B43C /* RegisterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459526655BE100B5B43C /* RegisterWorker.swift */; };
+		0F04459C26655BE100B5B43C /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459626655BE100B5B43C /* RegisterRouter.swift */; };
+		0F04459D26655BE100B5B43C /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459726655BE100B5B43C /* RegisterModels.swift */; };
+		0F04459E26655BE100B5B43C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459826655BE100B5B43C /* RegisterViewController.swift */; };
+		0F04459F26655BE100B5B43C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459926655BE100B5B43C /* RegisterInteractor.swift */; };
 		0FA138BE2662BB68004F6A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA138BD2662BB68004F6A2F /* AppDelegate.swift */; };
 		0FA138C52662BB68004F6A2F /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA138C32662BB68004F6A2F /* SplashScreen.storyboard */; };
 		0FA138C82662BB68004F6A2F /* Alarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FA138C62662BB68004F6A2F /* Alarm.xcdatamodeld */; };
@@ -51,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F04459426655BE100B5B43C /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		0F04459526655BE100B5B43C /* RegisterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorker.swift; sourceTree = "<group>"; };
+		0F04459626655BE100B5B43C /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		0F04459726655BE100B5B43C /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
+		0F04459826655BE100B5B43C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0F04459926655BE100B5B43C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		0FA138BA2662BB68004F6A2F /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA138BD2662BB68004F6A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FA138C42662BB68004F6A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -120,6 +132,12 @@
 		0F04459226655A5C00B5B43C /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				0F04459426655BE100B5B43C /* RegisterPresenter.swift */,
+				0F04459526655BE100B5B43C /* RegisterWorker.swift */,
+				0F04459626655BE100B5B43C /* RegisterRouter.swift */,
+				0F04459726655BE100B5B43C /* RegisterModels.swift */,
+				0F04459826655BE100B5B43C /* RegisterViewController.swift */,
+				0F04459926655BE100B5B43C /* RegisterInteractor.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -557,7 +575,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA1398E2662CFC0004F6A2F /* AroundPrivilegePresenter.swift in Sources */,
+				0F04459E26655BE100B5B43C /* RegisterViewController.swift in Sources */,
+				0F04459C26655BE100B5B43C /* RegisterRouter.swift in Sources */,
 				0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */,
+				0F04459D26655BE100B5B43C /* RegisterModels.swift in Sources */,
+				0F04459B26655BE100B5B43C /* RegisterWorker.swift in Sources */,
 				0FA139242662BEDF004F6A2F /* SplashScreenWorker.swift in Sources */,
 				0FA139252662BEDF004F6A2F /* SplashScreenRouter.swift in Sources */,
 				0FA139432662CA4B004F6A2F /* MainTabBarController.swift in Sources */,
@@ -569,9 +591,11 @@
 				0FA139482662CAAD004F6A2F /* BaseViewController.swift in Sources */,
 				0FA138BE2662BB68004F6A2F /* AppDelegate.swift in Sources */,
 				0FA139282662BEDF004F6A2F /* SplashScreenInteractor.swift in Sources */,
+				0F04459A26655BE100B5B43C /* RegisterPresenter.swift in Sources */,
 				0FA138C82662BB68004F6A2F /* Alarm.xcdatamodeld in Sources */,
 				0FA139232662BEDF004F6A2F /* SplashScreenPresenter.swift in Sources */,
 				0FA139902662CFC0004F6A2F /* AroundPrivilegeRouter.swift in Sources */,
+				0F04459F26655BE100B5B43C /* RegisterInteractor.swift in Sources */,
 				0FA139922662CFC0004F6A2F /* AroundPrivilegeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
