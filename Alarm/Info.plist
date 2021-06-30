@@ -45,8 +45,19 @@
 	</array>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Please Allow Permission</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Please Allow Permission</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please Allow Permission</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>KrungthaiFast-Bold.ttf</string>
+		<string>KrungthaiFast-BoldItalic.ttf</string>
+		<string>KrungthaiFast-Italic.ttf</string>
+		<string>KrungthaiFast-Light.ttf</string>
+		<string>KrungthaiFast-LightItalic.ttf</string>
+		<string>KrungthaiFast-Regular.ttf</string>
+		<string>KrungthaiFast-UltraLight.ttf</string>
+		<string>KrungthaiFast-UltraLightItalic.ttf</string>
+	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechromes</string>

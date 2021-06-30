@@ -17,7 +17,8 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
             return
         }
         let aroundVC = AroundPrivilegeViewController.initFromStoryboard()
-        self.setViewControllers([aroundVC], animated: false)
+        let suggestVC = SuggestViewController.initFromStoryboard()
+        self.setViewControllers([aroundVC, suggestVC], animated: false)
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
