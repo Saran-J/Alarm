@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KrungthaiFast-Bold.ttf">
+            <string>KrungthaiFast-Bold</string>
+        </array>
+        <array key="KrungthaiFast-Regular.ttf">
+            <string>KrungthaiFast-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvestmentView" customModule="Alarm" customModuleProvider="target">
+            <connections>
+                <outlet property="changeLabel" destination="S8f-bn-eXE" id="Shd-vG-kee"/>
+                <outlet property="changeValueLabel" destination="XHj-4D-sWr" id="hRP-pB-0ah"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Pwf-BW-feN"/>
+                <outlet property="cornerView" destination="4TS-zi-VxM" id="GdH-Ih-ouQ"/>
+                <outlet property="typeLabel" destination="jwd-rv-Pve" id="YWV-sn-zSH"/>
+                <outlet property="typeValueLabel" destination="0hO-Fw-Xzc" id="PHE-cQ-tgG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bw3-n8-jpN" customClass="ShadowView" customModule="Alarm" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="109"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpj-R0-cWI" customClass="RoundCornerView" customModule="Alarm" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="109"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TS-zi-VxM" customClass="RoundCornerView" customModule="Alarm" customModuleProvider="target">
+                            <rect key="frame" x="-10" y="-16" width="115" height="32"/>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="115" id="2UQ-XL-Ysi"/>
+                                <constraint firstAttribute="height" constant="32" id="RzZ-L4-KNe"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwd-rv-Pve">
+                            <rect key="frame" x="16" y="32" width="40.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="CAS-0G-q5s"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KrungthaiFast-Bold" family="Krungthai Fast" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.094117647058823528" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hO-Fw-Xzc">
+                            <rect key="frame" x="276.5" y="32" width="50.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="70Y-SH-KY2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KrungthaiFast-Bold" family="Krungthai Fast" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เปลี่ยนแปลง" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8f-bn-eXE">
+                            <rect key="frame" x="16" y="57" width="79" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="39c-83-R60"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KrungthaiFast-Regular" family="Krungthai Fast" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHj-4D-sWr">
+                            <rect key="frame" x="287.5" y="57" width="39.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="gcM-Zt-JFk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KrungthaiFast-Regular" family="Krungthai Fast" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="0hO-Fw-Xzc" firstAttribute="centerY" secondItem="jwd-rv-Pve" secondAttribute="centerY" id="1sH-Np-a8v"/>
+                        <constraint firstItem="jwd-rv-Pve" firstAttribute="leading" secondItem="Wpj-R0-cWI" secondAttribute="leading" constant="16" id="5xM-xb-ZNS"/>
+                        <constraint firstItem="4TS-zi-VxM" firstAttribute="top" secondItem="Wpj-R0-cWI" secondAttribute="top" constant="-16" id="T90-sz-m8a"/>
+                        <constraint firstItem="XHj-4D-sWr" firstAttribute="centerY" secondItem="S8f-bn-eXE" secondAttribute="centerY" id="WSa-ok-J4m"/>
+                        <constraint firstItem="4TS-zi-VxM" firstAttribute="leading" secondItem="Wpj-R0-cWI" secondAttribute="leading" constant="-10" id="WpC-jE-0Y4"/>
+                        <constraint firstItem="jwd-rv-Pve" firstAttribute="top" secondItem="4TS-zi-VxM" secondAttribute="bottom" constant="16" id="XXp-0i-Xmo"/>
+                        <constraint firstAttribute="trailing" secondItem="XHj-4D-sWr" secondAttribute="trailing" constant="16" id="gHn-qY-7m8"/>
+                        <constraint firstItem="S8f-bn-eXE" firstAttribute="top" secondItem="jwd-rv-Pve" secondAttribute="bottom" constant="4" id="h4E-eE-7sS"/>
+                        <constraint firstAttribute="trailing" secondItem="0hO-Fw-Xzc" secondAttribute="trailing" constant="16" id="ilT-fo-sYC"/>
+                        <constraint firstItem="S8f-bn-eXE" firstAttribute="leading" secondItem="Wpj-R0-cWI" secondAttribute="leading" constant="16" id="yFE-uP-lqF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bw3-n8-jpN" secondAttribute="bottom" id="787-b5-sIt"/>
+                <constraint firstAttribute="bottom" secondItem="Wpj-R0-cWI" secondAttribute="bottom" id="7eu-5m-g2I"/>
+                <constraint firstItem="Wpj-R0-cWI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AXM-Gy-saV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wpj-R0-cWI" secondAttribute="trailing" id="G6g-3V-Ydx"/>
+                <constraint firstAttribute="trailing" secondItem="bw3-n8-jpN" secondAttribute="trailing" id="Ic5-z1-lna"/>
+                <constraint firstItem="bw3-n8-jpN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xjw-Rv-bcq"/>
+                <constraint firstItem="Wpj-R0-cWI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mbW-rM-SKz"/>
+                <constraint firstItem="bw3-n8-jpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wrt-Rg-hRR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="60.14492753623189" y="61.941964285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

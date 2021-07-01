@@ -11,6 +11,7 @@ target 'Alarm' do
   pod 'SkyFloatingLabelTextField'
   pod 'JGProgressHUD'
   pod 'GoogleMaps'
+  pod 'Charts'
 
   # Pods for Alarm
 

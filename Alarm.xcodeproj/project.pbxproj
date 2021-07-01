@@ -23,6 +23,9 @@
 		0F04459D26655BE100B5B43C /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459726655BE100B5B43C /* RegisterModels.swift */; };
 		0F04459E26655BE100B5B43C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459826655BE100B5B43C /* RegisterViewController.swift */; };
 		0F04459F26655BE100B5B43C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04459926655BE100B5B43C /* RegisterInteractor.swift */; };
+		0F23E6EA268E153D00E5671B /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E6E9268E153D00E5671B /* UIFontExtension.swift */; };
+		0F23E6F0268E21C400E5671B /* InvestmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E6EF268E21C400E5671B /* InvestmentView.swift */; };
+		0F23E6F8268E21DB00E5671B /* InvestmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E6F7268E21DB00E5671B /* InvestmentView.xib */; };
 		0F8EC09E268CA7F3005F512E /* KrungthaiFast-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC096268CA7F2005F512E /* KrungthaiFast-Light.ttf */; };
 		0F8EC09F268CA7F3005F512E /* KrungthaiFast-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC097268CA7F2005F512E /* KrungthaiFast-LightItalic.ttf */; };
 		0F8EC0A0268CA7F3005F512E /* KrungthaiFast-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC098268CA7F2005F512E /* KrungthaiFast-Bold.ttf */; };
@@ -88,6 +91,7 @@
 		0FA139932662CFC0004F6A2F /* AroundPrivilegeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */; };
 		0FA1399B2662CFEA004F6A2F /* AroundPrivilege.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */; };
 		0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139AF2662DD4B004F6A2F /* LocationManager.swift */; };
+		0FB9A140268E0E4C00929F6F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */; };
 		0FC26E56268D0E1D005C360A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC26E55268D0E1D005C360A /* TabViewController.swift */; };
 		1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */; };
 		7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */; };
@@ -128,6 +132,9 @@
 		0F04459726655BE100B5B43C /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
 		0F04459826655BE100B5B43C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0F04459926655BE100B5B43C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		0F23E6E9268E153D00E5671B /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		0F23E6EF268E21C400E5671B /* InvestmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentView.swift; sourceTree = "<group>"; };
+		0F23E6F7268E21DB00E5671B /* InvestmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvestmentView.xib; sourceTree = "<group>"; };
 		0F8EC096268CA7F2005F512E /* KrungthaiFast-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KrungthaiFast-Light.ttf"; sourceTree = "<group>"; };
 		0F8EC097268CA7F2005F512E /* KrungthaiFast-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KrungthaiFast-LightItalic.ttf"; sourceTree = "<group>"; };
 		0F8EC098268CA7F2005F512E /* KrungthaiFast-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KrungthaiFast-Bold.ttf"; sourceTree = "<group>"; };
@@ -199,6 +206,7 @@
 		0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundPrivilegeInteractor.swift; sourceTree = "<group>"; };
 		0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AroundPrivilege.storyboard; sourceTree = "<group>"; };
 		0FA139AF2662DD4B004F6A2F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0FC26E55268D0E1D005C360A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.debug.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -292,6 +300,24 @@
 			path = ValidatePin;
 			sourceTree = "<group>";
 		};
+		0F0B787E268E0DCA006D24CE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */,
+				0F23E6E9268E153D00E5671B /* UIFontExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0F23E6EE268E219100E5671B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0F23E6EF268E21C400E5671B /* InvestmentView.swift */,
+				0F23E6F7268E21DB00E5671B /* InvestmentView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		0F8EC095268CA7C1005F512E /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +379,7 @@
 		0F8EC11C268CF8A1005F512E /* Investment */ = {
 			isa = PBXGroup;
 			children = (
+				0F23E6EE268E219100E5671B /* CustomView */,
 				0F8EC11F268CF8C7005F512E /* InvestmentPresenter.swift */,
 				0F8EC120268CF8C7005F512E /* InvestmentWorker.swift */,
 				0F8EC121268CF8C7005F512E /* InvestmentRouter.swift */,
@@ -417,6 +444,7 @@
 		0FA138BC2662BB68004F6A2F /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				0F0B787E268E0DCA006D24CE /* Extension */,
 				0F8EC0A9268CB891005F512E /* Component */,
 				0F00E513268B6DC50095B535 /* Provider */,
 				0F00E515268B6DC50095B535 /* Service */,
@@ -659,6 +687,7 @@
 				0F8EC0E8268CCCCD005F512E /* PromotionCell.xib in Resources */,
 				0F8EC0A5268CA7F3005F512E /* KrungthaiFast-UltraLight.ttf in Resources */,
 				0F8EC12F268CF8D2005F512E /* Investment.storyboard in Resources */,
+				0F23E6F8268E21DB00E5671B /* InvestmentView.xib in Resources */,
 				0F8EC0EF268CDA3B005F512E /* NewsCell.xib in Resources */,
 				0F8EC0C4268CBCCE005F512E /* PrivilegeCell.xib in Resources */,
 				0F00E51F268B6E040095B535 /* Suggest.storyboard in Resources */,
@@ -877,6 +906,7 @@
 				0FA139262662BEDF004F6A2F /* SplashScreenModels.swift in Sources */,
 				0F8EC151268CF9C1005F512E /* ContactViewController.swift in Sources */,
 				0F8EC125268CF8C7005F512E /* InvestmentPresenter.swift in Sources */,
+				0F23E6EA268E153D00E5671B /* UIFontExtension.swift in Sources */,
 				0F8EC126268CF8C7005F512E /* InvestmentWorker.swift in Sources */,
 				0F8EC14D268CF9C1005F512E /* ContactPresenter.swift in Sources */,
 				0F8EC13D268CF948005F512E /* ProfileViewController.swift in Sources */,
@@ -893,6 +923,7 @@
 				0F04459A26655BE100B5B43C /* RegisterPresenter.swift in Sources */,
 				0FA138C82662BB68004F6A2F /* Alarm.xcdatamodeld in Sources */,
 				0F8EC14E268CF9C1005F512E /* ContactWorker.swift in Sources */,
+				0FB9A140268E0E4C00929F6F /* UIColorExtension.swift in Sources */,
 				0F8EC14F268CF9C1005F512E /* ContactRouter.swift in Sources */,
 				0F8EC0B4268CBBFA005F512E /* Model.swift in Sources */,
 				0FA139232662BEDF004F6A2F /* SplashScreenPresenter.swift in Sources */,
@@ -902,6 +933,7 @@
 				0F8EC127268CF8C7005F512E /* InvestmentRouter.swift in Sources */,
 				0F04459F26655BE100B5B43C /* RegisterInteractor.swift in Sources */,
 				0FA139922662CFC0004F6A2F /* AroundPrivilegeViewController.swift in Sources */,
+				0F23E6F0268E21C400E5671B /* InvestmentView.swift in Sources */,
 				0F8EC115268CED7E005F512E /* ShadowView.swift in Sources */,
 				0F8EC13E268CF948005F512E /* ProfileInteractor.swift in Sources */,
 				0F00E533268B74500095B535 /* SuggestViewController.swift in Sources */,

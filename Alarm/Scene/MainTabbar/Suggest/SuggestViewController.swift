@@ -95,6 +95,7 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
     }
     
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         setupHeader()
     }
     
