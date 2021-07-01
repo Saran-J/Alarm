@@ -55,6 +55,7 @@ class AroundPrivilegeViewController: UIViewController, AroundPrivilegeDisplayLog
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
         setupGoogleMap()
         bindingLocationManager()
         locationManager.requestLocationAuthorization()

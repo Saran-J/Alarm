@@ -2,8 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cti-jV-ORQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,26 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-Zo-LiE">
-                                <rect key="frame" x="184" y="460" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="nr4-VJ-6iE"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbJ-0Q-f7x" customClass="GradientView" customModule="Alarm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.0" green="0.2666666667" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nJs-Zo-LiE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MAT-4p-EWc"/>
-                            <constraint firstItem="nJs-Zo-LiE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Sp0-R6-Qba"/>
+                            <constraint firstItem="jbJ-0Q-f7x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hkh-l1-4T7"/>
+                            <constraint firstAttribute="bottom" secondItem="jbJ-0Q-f7x" secondAttribute="bottom" id="VDV-vN-Cvz"/>
+                            <constraint firstAttribute="trailing" secondItem="jbJ-0Q-f7x" secondAttribute="trailing" id="XAT-BD-4re"/>
+                            <constraint firstItem="jbJ-0Q-f7x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lbw-Iz-xkz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iXC-aY-o6A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="99"/>
+            <point key="canvasLocation" x="79.710144927536234" y="98.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lej-fy-icW">
@@ -53,4 +63,9 @@
             <point key="canvasLocation" x="-820" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

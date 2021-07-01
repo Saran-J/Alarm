@@ -3,7 +3,7 @@ import UIKit
 protocol SuggestDisplayLogic: class {
 }
 
-class SuggestViewController: UIViewController, SuggestDisplayLogic {
+class SuggestViewController: TabViewController, SuggestDisplayLogic {
     var interactor: SuggestBusinessLogic?
     var router: (NSObjectProtocol & SuggestRoutingLogic & SuggestDataPassing)?
     
@@ -132,5 +132,10 @@ class SuggestViewController: UIViewController, SuggestDisplayLogic {
         setupPrivilegeCollectionView()
         setupPromotionCollectionView()
         setupNewsCollectionView()
+    }
+    
+    @IBAction func onClickPrivilege() {
+        let aroundVC = AroundPrivilegeViewController.initFromStoryboard()
+        onRoute.accept(aroundVC)
     }
 }

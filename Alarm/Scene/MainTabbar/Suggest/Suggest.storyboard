@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GYu-GZ-gX5">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,7 +17,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Suggest View Controller-->
+        <!--แนะนำ-->
         <scene sceneID="K3i-xR-Enh">
             <objects>
                 <viewController id="GYu-GZ-gX5" customClass="SuggestViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,11 +25,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-t8-kEx">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-t8-kEx" customClass="GradientView" customModule="Alarm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="126"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jch-Y7-Wmo">
-                                        <rect key="frame" x="16" y="53.666666666666657" width="48" height="45.333333333333336"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Jch-Y7-Wmo">
+                                        <rect key="frame" x="16" y="52" width="48" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="bb2-lC-6W5"/>
                                             <constraint firstAttribute="height" constant="48" id="zp5-0J-1Hn"/>
@@ -87,19 +88,46 @@
                                     <constraint firstItem="Jch-Y7-Wmo" firstAttribute="leading" secondItem="A2y-t8-kEx" secondAttribute="leading" constant="16" id="sQy-yA-AVl"/>
                                     <constraint firstItem="HbW-o6-Rfu" firstAttribute="leading" secondItem="Jch-Y7-Wmo" secondAttribute="trailing" constant="12" id="wyR-WB-mdN"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.0" green="0.26666666666666666" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.0" green="0.094117647058823528" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17m-gc-bJQ">
                                 <rect key="frame" x="0.0" y="126" width="428" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1DU-hq-ZIN">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="332"/>
-                                        <color key="backgroundColor" red="0.0" green="0.094117647058823528" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urB-cT-Gyh" customClass="GradientView" customModule="Alarm" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="332"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                        <color key="value" red="0.0" green="0.2666666667" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                        <color key="value" red="0.0" green="0.094117647058823528" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="urB-cT-Gyh" secondAttribute="trailing" id="2rG-2f-zrn"/>
+                                            <constraint firstItem="urB-cT-Gyh" firstAttribute="leading" secondItem="1DU-hq-ZIN" secondAttribute="leading" id="RqC-3B-LXk"/>
                                             <constraint firstAttribute="height" constant="332" id="WBr-XS-r3D"/>
+                                            <constraint firstItem="urB-cT-Gyh" firstAttribute="top" secondItem="1DU-hq-ZIN" secondAttribute="top" id="gGn-p7-O82"/>
+                                            <constraint firstAttribute="bottom" secondItem="urB-cT-Gyh" secondAttribute="bottom" id="qf6-gj-6oz"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pLC-Ue-iE0">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1512"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1576"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-8u-8K3" userLabel="notification">
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="174"/>
@@ -203,6 +231,9 @@
                                                         <state key="normal" title="ดูทั้งหมด" image="chevronRightBlue">
                                                             <color key="titleColor" red="0.0" green="0.65098039215686276" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onClickPrivilege" destination="GYu-GZ-gX5" eventType="touchUpInside" id="JdD-kg-7L2"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -640,6 +671,13 @@ Inter Wallet</string>
                                                     <constraint firstAttribute="bottom" secondItem="duO-GA-OAv" secondAttribute="bottom" id="mgc-g8-1ig"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tre-du-wUj" userLabel="separator">
+                                                <rect key="frame" x="0.0" y="1512" width="428" height="64"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="ZOp-UP-LXk"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -672,7 +710,9 @@ Inter Wallet</string>
                             <constraint firstItem="A2y-t8-kEx" firstAttribute="leading" secondItem="ZXo-TP-FIh" secondAttribute="leading" id="tOL-hn-NAB"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="แนะนำ" image="suggest" id="vr4-xf-nLc"/>
                     <navigationItem key="navigationItem" id="ApD-RQ-uE1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="headerView" destination="1DU-hq-ZIN" id="eq5-hp-sMX"/>
                         <outlet property="newsCollectionView" destination="duO-GA-OAv" id="Tw8-Ej-lke"/>
@@ -692,9 +732,10 @@ Inter Wallet</string>
         <image name="interwallet" width="163" height="192"/>
         <image name="mutalfund" width="163" height="192"/>
         <image name="notificationLogo" width="24" height="24"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="preciousLogo" width="123.33333587646484" height="16"/>
+        <image name="profile" width="24" height="24"/>
         <image name="stock" width="163" height="192"/>
+        <image name="suggest" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

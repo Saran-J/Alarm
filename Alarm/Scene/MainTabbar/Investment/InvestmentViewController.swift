@@ -1,15 +1,24 @@
 import UIKit
 
-protocol SplashScreenDisplayLogic: class {
+protocol InvestmentDisplayLogic: class {
 }
 
-class SplashScreenViewController: UIViewController, SplashScreenDisplayLogic {
-    var interactor: SplashScreenBusinessLogic?
-    var router: (NSObjectProtocol & SplashScreenRoutingLogic & SplashScreenDataPassing)?
+class InvestmentViewController: TabViewController, InvestmentDisplayLogic {
+    var interactor: InvestmentBusinessLogic?
+    var router: (NSObjectProtocol & InvestmentRoutingLogic & InvestmentDataPassing)?
     
+    // MARK: Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
+    }
+    
+    static func initFromStoryboard() -> InvestmentViewController {
+        let viewController = UIStoryboard(
+            name: "Investment",
+            bundle: nil)
+            .instantiateInitialViewController() as! InvestmentViewController
+        return viewController
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -17,11 +26,12 @@ class SplashScreenViewController: UIViewController, SplashScreenDisplayLogic {
         setup()
     }
     
+    // MARK: Setup
     private func setup() {
         let viewController = self
-        let interactor = SplashScreenInteractor()
-        let presenter = SplashScreenPresenter()
-        let router = SplashScreenRouter()
+        let interactor = InvestmentInteractor()
+        let presenter = InvestmentPresenter()
+        let router = InvestmentRouter()
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
@@ -30,6 +40,7 @@ class SplashScreenViewController: UIViewController, SplashScreenDisplayLogic {
         router.dataStore = interactor
     }
     
+    // MARK: Routing
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let scene = segue.identifier {
             let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
@@ -41,10 +52,5 @@ class SplashScreenViewController: UIViewController, SplashScreenDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
-            self?.router?.routeToMainTab()
-        }
     }
 }

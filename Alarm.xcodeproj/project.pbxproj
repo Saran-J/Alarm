@@ -45,6 +45,28 @@
 		0F8EC0EF268CDA3B005F512E /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC0ED268CDA3B005F512E /* NewsCell.xib */; };
 		0F8EC0F4268CDB02005F512E /* NewsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC0F3268CDB02005F512E /* NewsDelegate.swift */; };
 		0F8EC115268CED7E005F512E /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC114268CED7E005F512E /* ShadowView.swift */; };
+		0F8EC125268CF8C7005F512E /* InvestmentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC11F268CF8C7005F512E /* InvestmentPresenter.swift */; };
+		0F8EC126268CF8C7005F512E /* InvestmentWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC120268CF8C7005F512E /* InvestmentWorker.swift */; };
+		0F8EC127268CF8C7005F512E /* InvestmentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC121268CF8C7005F512E /* InvestmentRouter.swift */; };
+		0F8EC128268CF8C7005F512E /* InvestmentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC122268CF8C7005F512E /* InvestmentModels.swift */; };
+		0F8EC129268CF8C7005F512E /* InvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC123268CF8C7005F512E /* InvestmentViewController.swift */; };
+		0F8EC12A268CF8C7005F512E /* InvestmentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC124268CF8C7005F512E /* InvestmentInteractor.swift */; };
+		0F8EC12F268CF8D2005F512E /* Investment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC12E268CF8D2005F512E /* Investment.storyboard */; };
+		0F8EC139268CF948005F512E /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC133268CF948005F512E /* ProfilePresenter.swift */; };
+		0F8EC13A268CF948005F512E /* ProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC134268CF948005F512E /* ProfileWorker.swift */; };
+		0F8EC13B268CF948005F512E /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC135268CF948005F512E /* ProfileRouter.swift */; };
+		0F8EC13C268CF948005F512E /* ProfileModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC136268CF948005F512E /* ProfileModels.swift */; };
+		0F8EC13D268CF948005F512E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC137268CF948005F512E /* ProfileViewController.swift */; };
+		0F8EC13E268CF948005F512E /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC138268CF948005F512E /* ProfileInteractor.swift */; };
+		0F8EC143268CF953005F512E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC142268CF953005F512E /* Profile.storyboard */; };
+		0F8EC14D268CF9C1005F512E /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC147268CF9C1005F512E /* ContactPresenter.swift */; };
+		0F8EC14E268CF9C1005F512E /* ContactWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC148268CF9C1005F512E /* ContactWorker.swift */; };
+		0F8EC14F268CF9C1005F512E /* ContactRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC149268CF9C1005F512E /* ContactRouter.swift */; };
+		0F8EC150268CF9C1005F512E /* ContactModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC14A268CF9C1005F512E /* ContactModels.swift */; };
+		0F8EC151268CF9C1005F512E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC14B268CF9C1005F512E /* ContactViewController.swift */; };
+		0F8EC152268CF9C1005F512E /* ContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC14C268CF9C1005F512E /* ContactInteractor.swift */; };
+		0F8EC157268CF9D2005F512E /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC156268CF9D2005F512E /* Contact.storyboard */; };
+		0F8EC1AC268CFCA3005F512E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EC1AB268CFCA3005F512E /* GradientView.swift */; };
 		0FA138BE2662BB68004F6A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA138BD2662BB68004F6A2F /* AppDelegate.swift */; };
 		0FA138C52662BB68004F6A2F /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA138C32662BB68004F6A2F /* SplashScreen.storyboard */; };
 		0FA138C82662BB68004F6A2F /* Alarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FA138C62662BB68004F6A2F /* Alarm.xcdatamodeld */; };
@@ -66,6 +88,7 @@
 		0FA139932662CFC0004F6A2F /* AroundPrivilegeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */; };
 		0FA1399B2662CFEA004F6A2F /* AroundPrivilege.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */; };
 		0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139AF2662DD4B004F6A2F /* LocationManager.swift */; };
+		0FC26E56268D0E1D005C360A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC26E55268D0E1D005C360A /* TabViewController.swift */; };
 		1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */; };
 		7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */; };
 		9DBE53E65F9F1BE93B8AFA3C /* Pods_Alarm_AlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */; };
@@ -127,6 +150,28 @@
 		0F8EC0ED268CDA3B005F512E /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		0F8EC0F3268CDB02005F512E /* NewsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDelegate.swift; sourceTree = "<group>"; };
 		0F8EC114268CED7E005F512E /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		0F8EC11F268CF8C7005F512E /* InvestmentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentPresenter.swift; sourceTree = "<group>"; };
+		0F8EC120268CF8C7005F512E /* InvestmentWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentWorker.swift; sourceTree = "<group>"; };
+		0F8EC121268CF8C7005F512E /* InvestmentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentRouter.swift; sourceTree = "<group>"; };
+		0F8EC122268CF8C7005F512E /* InvestmentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentModels.swift; sourceTree = "<group>"; };
+		0F8EC123268CF8C7005F512E /* InvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentViewController.swift; sourceTree = "<group>"; };
+		0F8EC124268CF8C7005F512E /* InvestmentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentInteractor.swift; sourceTree = "<group>"; };
+		0F8EC12E268CF8D2005F512E /* Investment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Investment.storyboard; sourceTree = "<group>"; };
+		0F8EC133268CF948005F512E /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		0F8EC134268CF948005F512E /* ProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWorker.swift; sourceTree = "<group>"; };
+		0F8EC135268CF948005F512E /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		0F8EC136268CF948005F512E /* ProfileModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModels.swift; sourceTree = "<group>"; };
+		0F8EC137268CF948005F512E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0F8EC138268CF948005F512E /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		0F8EC142268CF953005F512E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		0F8EC147268CF9C1005F512E /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
+		0F8EC148268CF9C1005F512E /* ContactWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWorker.swift; sourceTree = "<group>"; };
+		0F8EC149268CF9C1005F512E /* ContactRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRouter.swift; sourceTree = "<group>"; };
+		0F8EC14A268CF9C1005F512E /* ContactModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModels.swift; sourceTree = "<group>"; };
+		0F8EC14B268CF9C1005F512E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		0F8EC14C268CF9C1005F512E /* ContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInteractor.swift; sourceTree = "<group>"; };
+		0F8EC156268CF9D2005F512E /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		0F8EC1AB268CFCA3005F512E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0FA138BA2662BB68004F6A2F /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA138BD2662BB68004F6A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FA138C42662BB68004F6A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -154,6 +199,7 @@
 		0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundPrivilegeInteractor.swift; sourceTree = "<group>"; };
 		0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AroundPrivilege.storyboard; sourceTree = "<group>"; };
 		0FA139AF2662DD4B004F6A2F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0FC26E55268D0E1D005C360A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.debug.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		849A9054BB9E5DD73074B856 /* Pods-Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.release.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +312,7 @@
 			children = (
 				0F8EC0AA268CB8B4005F512E /* RoundCornerView.swift */,
 				0F8EC114268CED7E005F512E /* ShadowView.swift */,
+				0F8EC1AB268CFCA3005F512E /* GradientView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -301,6 +348,48 @@
 				0F8EC0F3268CDB02005F512E /* NewsDelegate.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		0F8EC11C268CF8A1005F512E /* Investment */ = {
+			isa = PBXGroup;
+			children = (
+				0F8EC11F268CF8C7005F512E /* InvestmentPresenter.swift */,
+				0F8EC120268CF8C7005F512E /* InvestmentWorker.swift */,
+				0F8EC121268CF8C7005F512E /* InvestmentRouter.swift */,
+				0F8EC122268CF8C7005F512E /* InvestmentModels.swift */,
+				0F8EC123268CF8C7005F512E /* InvestmentViewController.swift */,
+				0F8EC124268CF8C7005F512E /* InvestmentInteractor.swift */,
+				0F8EC12E268CF8D2005F512E /* Investment.storyboard */,
+			);
+			path = Investment;
+			sourceTree = "<group>";
+		};
+		0F8EC11D268CF8A7005F512E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0F8EC133268CF948005F512E /* ProfilePresenter.swift */,
+				0F8EC134268CF948005F512E /* ProfileWorker.swift */,
+				0F8EC135268CF948005F512E /* ProfileRouter.swift */,
+				0F8EC136268CF948005F512E /* ProfileModels.swift */,
+				0F8EC137268CF948005F512E /* ProfileViewController.swift */,
+				0F8EC138268CF948005F512E /* ProfileInteractor.swift */,
+				0F8EC142268CF953005F512E /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0F8EC11E268CF8AE005F512E /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				0F8EC147268CF9C1005F512E /* ContactPresenter.swift */,
+				0F8EC148268CF9C1005F512E /* ContactWorker.swift */,
+				0F8EC149268CF9C1005F512E /* ContactRouter.swift */,
+				0F8EC14A268CF9C1005F512E /* ContactModels.swift */,
+				0F8EC14B268CF9C1005F512E /* ContactViewController.swift */,
+				0F8EC14C268CF9C1005F512E /* ContactInteractor.swift */,
+				0F8EC156268CF9D2005F512E /* Contact.storyboard */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 		0FA138B12662BB68004F6A2F = {
@@ -390,8 +479,12 @@
 		0FA139412662CA1E004F6A2F /* MainTabbar */ = {
 			isa = PBXGroup;
 			children = (
+				0F8EC11E268CF8AE005F512E /* Contact */,
+				0F8EC11D268CF8A7005F512E /* Profile */,
+				0F8EC11C268CF8A1005F512E /* Investment */,
 				0F00E50C268B6D6A0095B535 /* Suggest */,
 				0FA139422662CA4B004F6A2F /* MainTabBarController.swift */,
+				0FC26E55268D0E1D005C360A /* TabViewController.swift */,
 			);
 			path = MainTabbar;
 			sourceTree = "<group>";
@@ -553,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8EC0A2268CA7F3005F512E /* KrungthaiFast-Italic.ttf in Resources */,
+				0F8EC143268CF953005F512E /* Profile.storyboard in Resources */,
 				0FA138CD2662BB69004F6A2F /* LaunchScreen.storyboard in Resources */,
 				0F8EC0D4268CC73D005F512E /* BlankCell.xib in Resources */,
 				0F8EC09E268CA7F3005F512E /* KrungthaiFast-Light.ttf in Resources */,
@@ -560,9 +654,11 @@
 				0FA1399B2662CFEA004F6A2F /* AroundPrivilege.storyboard in Resources */,
 				0F8EC0A0268CA7F3005F512E /* KrungthaiFast-Bold.ttf in Resources */,
 				0FA138CA2662BB69004F6A2F /* Assets.xcassets in Resources */,
+				0F8EC157268CF9D2005F512E /* Contact.storyboard in Resources */,
 				0F8EC0A1268CA7F3005F512E /* KrungthaiFast-Regular.ttf in Resources */,
 				0F8EC0E8268CCCCD005F512E /* PromotionCell.xib in Resources */,
 				0F8EC0A5268CA7F3005F512E /* KrungthaiFast-UltraLight.ttf in Resources */,
+				0F8EC12F268CF8D2005F512E /* Investment.storyboard in Resources */,
 				0F8EC0EF268CDA3B005F512E /* NewsCell.xib in Resources */,
 				0F8EC0C4268CBCCE005F512E /* PrivilegeCell.xib in Resources */,
 				0F00E51F268B6E040095B535 /* Suggest.storyboard in Resources */,
@@ -758,36 +854,56 @@
 				0F00E518268B6DC50095B535 /* PhotoProvider.swift in Sources */,
 				0F00E519268B6DC50095B535 /* GetPhotoService.swift in Sources */,
 				0F8EC0D3268CC73D005F512E /* BlankCell.swift in Sources */,
+				0F8EC1AC268CFCA3005F512E /* GradientView.swift in Sources */,
+				0F8EC13A268CF948005F512E /* ProfileWorker.swift in Sources */,
 				0FA139242662BEDF004F6A2F /* SplashScreenWorker.swift in Sources */,
 				0F00E530268B74500095B535 /* SuggestWorker.swift in Sources */,
+				0F8EC12A268CF8C7005F512E /* InvestmentInteractor.swift in Sources */,
 				0FA139252662BEDF004F6A2F /* SplashScreenRouter.swift in Sources */,
 				0F8EC0EE268CDA3B005F512E /* NewsCell.swift in Sources */,
+				0F8EC129268CF8C7005F512E /* InvestmentViewController.swift in Sources */,
+				0F8EC139268CF948005F512E /* ProfilePresenter.swift in Sources */,
 				0F8EC0D9268CCBD3005F512E /* PromotionDelegate.swift in Sources */,
 				0FA139432662CA4B004F6A2F /* MainTabBarController.swift in Sources */,
 				0FA139912662CFC0004F6A2F /* AroundPrivilegeModels.swift in Sources */,
 				0FA139932662CFC0004F6A2F /* AroundPrivilegeInteractor.swift in Sources */,
+				0F8EC13C268CF948005F512E /* ProfileModels.swift in Sources */,
 				0F00E534268B74500095B535 /* SuggestInteractor.swift in Sources */,
+				0F8EC13B268CF948005F512E /* ProfileRouter.swift in Sources */,
 				0FA1398F2662CFC0004F6A2F /* AroundPrivilegeWorker.swift in Sources */,
 				0FA139272662BEDF004F6A2F /* SplashScreenViewController.swift in Sources */,
+				0F8EC128268CF8C7005F512E /* InvestmentModels.swift in Sources */,
+				0F8EC152268CF9C1005F512E /* ContactInteractor.swift in Sources */,
 				0FA139262662BEDF004F6A2F /* SplashScreenModels.swift in Sources */,
+				0F8EC151268CF9C1005F512E /* ContactViewController.swift in Sources */,
+				0F8EC125268CF8C7005F512E /* InvestmentPresenter.swift in Sources */,
+				0F8EC126268CF8C7005F512E /* InvestmentWorker.swift in Sources */,
+				0F8EC14D268CF9C1005F512E /* ContactPresenter.swift in Sources */,
+				0F8EC13D268CF948005F512E /* ProfileViewController.swift in Sources */,
 				0F8EC0AB268CB8B4005F512E /* RoundCornerView.swift in Sources */,
 				0F00E51A268B6DC50095B535 /* BaseService.swift in Sources */,
 				0F8EC0E7268CCCCD005F512E /* PromotionCell.swift in Sources */,
 				0F8EC0F4268CDB02005F512E /* NewsDelegate.swift in Sources */,
 				0FA139482662CAAD004F6A2F /* BaseViewController.swift in Sources */,
 				0F00E532268B74500095B535 /* SuggestModels.swift in Sources */,
+				0F8EC150268CF9C1005F512E /* ContactModels.swift in Sources */,
 				0FA138BE2662BB68004F6A2F /* AppDelegate.swift in Sources */,
 				0FA139282662BEDF004F6A2F /* SplashScreenInteractor.swift in Sources */,
+				0FC26E56268D0E1D005C360A /* TabViewController.swift in Sources */,
 				0F04459A26655BE100B5B43C /* RegisterPresenter.swift in Sources */,
 				0FA138C82662BB68004F6A2F /* Alarm.xcdatamodeld in Sources */,
+				0F8EC14E268CF9C1005F512E /* ContactWorker.swift in Sources */,
+				0F8EC14F268CF9C1005F512E /* ContactRouter.swift in Sources */,
 				0F8EC0B4268CBBFA005F512E /* Model.swift in Sources */,
 				0FA139232662BEDF004F6A2F /* SplashScreenPresenter.swift in Sources */,
 				0F00E531268B74500095B535 /* SuggestRouter.swift in Sources */,
 				0FA139902662CFC0004F6A2F /* AroundPrivilegeRouter.swift in Sources */,
 				0F8EC0C9268CBF3C005F512E /* PrivilegeDelegate.swift in Sources */,
+				0F8EC127268CF8C7005F512E /* InvestmentRouter.swift in Sources */,
 				0F04459F26655BE100B5B43C /* RegisterInteractor.swift in Sources */,
 				0FA139922662CFC0004F6A2F /* AroundPrivilegeViewController.swift in Sources */,
 				0F8EC115268CED7E005F512E /* ShadowView.swift in Sources */,
+				0F8EC13E268CF948005F512E /* ProfileInteractor.swift in Sources */,
 				0F00E533268B74500095B535 /* SuggestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -892,7 +1008,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -947,7 +1063,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -973,7 +1089,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.saran.alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -993,7 +1109,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.saran.alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

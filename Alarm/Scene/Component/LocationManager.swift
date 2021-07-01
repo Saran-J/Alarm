@@ -12,7 +12,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
     }
     func requestLocationAuthorization() {
-        guard locationManager.authorizationStatus == .notDetermined else {
+        let authorizationStatus = CLLocationManager.authorizationStatus()
+        if authorizationStatus == .notDetermined {
             checkLocationStatus()
             return
         }
@@ -30,7 +31,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     }
     
     private func checkLocationStatus() {
-        switch locationManager.authorizationStatus {
+        let authorizationStatus = CLLocationManager.authorizationStatus()
+        switch authorizationStatus {
         case .authorizedAlways, .authorizedWhenInUse:
             locationManager.startUpdatingLocation()
         case .denied, .restricted:
