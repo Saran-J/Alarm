@@ -10,3 +10,10 @@ enum Contact {
         }
     }
 }
+
+struct ContactModel {
+    let name: String
+    let nickname: String
+    let latestContactDate: String
+    let imageUrl: String
+}

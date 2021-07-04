@@ -537,8 +537,6 @@
                                     <constraint firstAttribute="trailing" secondItem="Fyq-eo-Lfs" secondAttribute="trailing" id="edM-pv-7FQ"/>
                                     <constraint firstItem="E2a-en-LTd" firstAttribute="top" secondItem="Lt9-0A-XGL" secondAttribute="top" id="flS-gF-V1H"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="s2y-y0-ogi"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="XyK-jn-1aN"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AoE-t3-6Q0"/>

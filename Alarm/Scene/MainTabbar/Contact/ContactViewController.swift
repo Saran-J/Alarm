@@ -7,6 +7,39 @@ class ContactViewController: TabViewController, ContactDisplayLogic {
     var interactor: ContactBusinessLogic?
     var router: (NSObjectProtocol & ContactRoutingLogic & ContactDataPassing)?
     
+    @IBOutlet weak var contactCollectionView: UICollectionView!
+    @IBOutlet weak var headerView: UIView!
+    
+    let contactData: [ContactModel] = [
+        ContactModel(
+            name: "อรวรรณ",
+            nickname: "ปุ้ย",
+            latestContactDate: "12 มิ.ย. 64",
+            imageUrl: "mockContact1"),
+        
+        ContactModel(
+            name: "สุพรรณณา",
+            nickname: "เล็ก",
+            latestContactDate: "11 มิ.ย. 64",
+            imageUrl: "mockContact2")
+    ]
+    
+    func setupCollectionView() {
+        contactCollectionView.register(
+            UINib(
+                nibName: "ContactCell",
+                bundle: nil
+            ),
+            forCellWithReuseIdentifier: "contactCell")
+        
+        contactCollectionView.register(
+            UINib(
+                nibName: "BlankCell",
+                bundle: nil
+            ),
+            forCellWithReuseIdentifier: "blankCell")
+    }
+    
     // MARK: Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -53,5 +86,59 @@ class ContactViewController: TabViewController, ContactDisplayLogic {
     // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupCollectionView()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        DispatchQueue.main.async {
+            self.setupHeader()
+        }
+    }
+
+    func setupHeader() {
+        let rectShape = CAShapeLayer()
+        rectShape.bounds = self.headerView.frame
+        rectShape.position = self.headerView.center
+        rectShape.path = UIBezierPath(
+            roundedRect: self.headerView.bounds,
+            byRoundingCorners: [.bottomLeft],
+            cornerRadii: CGSize(width: 25, height: 25)
+        ).cgPath
+        self.headerView.layer.mask = rectShape
+    }
+}
+
+extension ContactViewController: UICollectionViewDataSource,
+    UICollectionViewDelegate,
+    UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return contactData.count + 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if indexPath.row == 0 || indexPath.row == contactData.count + 1 {
+            return collectionView.dequeueReusableCell(
+                withReuseIdentifier: "blankCell",
+                for: indexPath
+            )
+        }
+        
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "contactCell",
+            for: indexPath
+        ) as? ContactCell else {
+            return UICollectionViewCell()
+        }
+        let data = contactData[indexPath.row - 1]
+        cell.setupCellData(data: data)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.row == 0 || indexPath.row == contactData.count + 1 {
+            return CGSize(width: 8, height: 125)
+        }
+        return CGSize(width: 232, height: 125)
     }
 }

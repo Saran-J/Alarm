@@ -37,7 +37,7 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
         rectShape.position = self.headerView.center
         rectShape.path = UIBezierPath(
             roundedRect: self.headerView.bounds,
-            byRoundingCorners: [.bottomLeft, .bottomRight],
+            byRoundingCorners: [.bottomLeft],
             cornerRadii: CGSize(width: 25, height: 25)
         ).cgPath
         self.headerView.layer.mask = rectShape

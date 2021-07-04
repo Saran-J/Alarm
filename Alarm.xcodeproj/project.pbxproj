@@ -93,6 +93,9 @@
 		0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139AF2662DD4B004F6A2F /* LocationManager.swift */; };
 		0FB9A140268E0E4C00929F6F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */; };
 		0FC26E56268D0E1D005C360A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC26E55268D0E1D005C360A /* TabViewController.swift */; };
+		0FEE79F92692395B00D565E1 /* UDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE79F82692395B00D565E1 /* UDeviceExtension.swift */; };
+		0FEE7A0026923BD200D565E1 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE79FE26923BD200D565E1 /* ContactCell.swift */; };
+		0FEE7A0126923BD200D565E1 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEE79FF26923BD200D565E1 /* ContactCell.xib */; };
 		1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */; };
 		7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */; };
 		9DBE53E65F9F1BE93B8AFA3C /* Pods_Alarm_AlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */; };
@@ -208,6 +211,9 @@
 		0FA139AF2662DD4B004F6A2F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0FC26E55268D0E1D005C360A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		0FEE79F82692395B00D565E1 /* UDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDeviceExtension.swift; sourceTree = "<group>"; };
+		0FEE79FE26923BD200D565E1 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		0FEE79FF26923BD200D565E1 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 		5BAC64DFBBBFC618E6EA1706 /* Pods-AlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.debug.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		661B3D7DB2A27A4DDCA5DFE9 /* Pods-AlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmTests/Pods-AlarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		849A9054BB9E5DD73074B856 /* Pods-Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.release.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.release.xcconfig"; sourceTree = "<group>"; };
@@ -305,6 +311,7 @@
 			children = (
 				0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */,
 				0F23E6E9268E153D00E5671B /* UIFontExtension.swift */,
+				0FEE79F82692395B00D565E1 /* UDeviceExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -408,6 +415,7 @@
 		0F8EC11E268CF8AE005F512E /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				0FEE79FD26923B9F00D565E1 /* cell */,
 				0F8EC147268CF9C1005F512E /* ContactPresenter.swift */,
 				0F8EC148268CF9C1005F512E /* ContactWorker.swift */,
 				0F8EC149268CF9C1005F512E /* ContactRouter.swift */,
@@ -537,6 +545,15 @@
 				0FA139AF2662DD4B004F6A2F /* LocationManager.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		0FEE79FD26923B9F00D565E1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0FEE79FE26923BD200D565E1 /* ContactCell.swift */,
+				0FEE79FF26923BD200D565E1 /* ContactCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		26732DEE7E9AD3A12E240DD1 /* Pods */ = {
@@ -681,6 +698,7 @@
 				0F8EC0A3268CA7F3005F512E /* KrungthaiFast-UltraLightItalic.ttf in Resources */,
 				0FA1399B2662CFEA004F6A2F /* AroundPrivilege.storyboard in Resources */,
 				0F8EC0A0268CA7F3005F512E /* KrungthaiFast-Bold.ttf in Resources */,
+				0FEE7A0126923BD200D565E1 /* ContactCell.xib in Resources */,
 				0FA138CA2662BB69004F6A2F /* Assets.xcassets in Resources */,
 				0F8EC157268CF9D2005F512E /* Contact.storyboard in Resources */,
 				0F8EC0A1268CA7F3005F512E /* KrungthaiFast-Regular.ttf in Resources */,
@@ -873,6 +891,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA1398E2662CFC0004F6A2F /* AroundPrivilegePresenter.swift in Sources */,
+				0FEE7A0026923BD200D565E1 /* ContactCell.swift in Sources */,
 				0F04459E26655BE100B5B43C /* RegisterViewController.swift in Sources */,
 				0F04459C26655BE100B5B43C /* RegisterRouter.swift in Sources */,
 				0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */,
@@ -897,6 +916,7 @@
 				0FA139912662CFC0004F6A2F /* AroundPrivilegeModels.swift in Sources */,
 				0FA139932662CFC0004F6A2F /* AroundPrivilegeInteractor.swift in Sources */,
 				0F8EC13C268CF948005F512E /* ProfileModels.swift in Sources */,
+				0FEE79F92692395B00D565E1 /* UDeviceExtension.swift in Sources */,
 				0F00E534268B74500095B535 /* SuggestInteractor.swift in Sources */,
 				0F8EC13B268CF948005F512E /* ProfileRouter.swift in Sources */,
 				0FA1398F2662CFC0004F6A2F /* AroundPrivilegeWorker.swift in Sources */,
@@ -1040,7 +1060,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1095,7 +1115,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1112,6 +1132,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = T2CXQAZL4J;
 				INFOPLIST_FILE = Alarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1132,6 +1153,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = T2CXQAZL4J;
 				INFOPLIST_FILE = Alarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

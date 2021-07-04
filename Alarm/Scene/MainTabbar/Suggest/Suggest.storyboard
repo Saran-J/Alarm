@@ -691,8 +691,6 @@ Inter Wallet</string>
                                     <constraint firstItem="1DU-hq-ZIN" firstAttribute="top" secondItem="17m-gc-bJQ" secondAttribute="top" id="qRo-A9-bRU"/>
                                     <constraint firstAttribute="bottom" secondItem="pLC-Ue-iE0" secondAttribute="bottom" id="sPo-UO-GaM"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="gc3-u0-p1b"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="B5I-5n-LRw"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZXo-TP-FIh"/>

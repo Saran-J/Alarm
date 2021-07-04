@@ -75,10 +75,20 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         tabBar.layer.shadowRadius = 2
         tabBar.layer.shadowColor = UIColor.black.cgColor
         tabBar.layer.shadowOpacity = 0.3
-        tabBar.frame.size.height = 80
-        tabBar.frame.origin.y = view.frame.height - 80
+        let safeAreaHeight: CGFloat = {
+            if UIDevice.current.isIphoneXSeries() {
+                if #available(iOS 11.0, *) {
+                    return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0
+                } else {
+                    return 0
+                }
+            }
+            return 0
+        }()
+        tabBar.frame.size.height = 70 + safeAreaHeight
+        tabBar.frame.origin.y = view.frame.height - (70 + safeAreaHeight)
         tabBar.items?.forEach({ item in
-            item.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -15.0)
+            item.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -5.0)
         })
     }
     
