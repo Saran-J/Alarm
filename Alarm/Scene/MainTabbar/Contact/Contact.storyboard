@@ -31,20 +31,21 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FpW-9S-9g9" customClass="RoundCornerView" customModule="Alarm" customModuleProvider="target">
                                         <rect key="frame" x="351" y="52" width="126" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notificationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xbP-RL-nwK">
-                                                <rect key="frame" x="15" y="14" width="24" height="24"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhO-rT-wgX" customClass="NotificationIconView" customModule="Alarm" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="4" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="24" id="Udx-eH-PDk"/>
-                                                    <constraint firstAttribute="height" constant="24" id="zAH-wh-waz"/>
+                                                    <constraint firstAttribute="height" constant="40" id="3Si-k5-Ky9"/>
+                                                    <constraint firstAttribute="width" constant="40" id="CPq-Rc-cMu"/>
                                                 </constraints>
-                                            </imageView>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="lhO-rT-wgX" firstAttribute="leading" secondItem="FpW-9S-9g9" secondAttribute="leading" constant="8" id="0bI-wf-beV"/>
                                             <constraint firstAttribute="width" constant="126" id="7PS-Q8-mmg"/>
                                             <constraint firstAttribute="height" constant="48" id="DDY-DF-TTK"/>
-                                            <constraint firstItem="xbP-RL-nwK" firstAttribute="leading" secondItem="FpW-9S-9g9" secondAttribute="leading" constant="15" id="cK5-D9-n7n"/>
-                                            <constraint firstItem="xbP-RL-nwK" firstAttribute="top" secondItem="FpW-9S-9g9" secondAttribute="top" constant="14" id="lgH-PO-tnb"/>
+                                            <constraint firstItem="lhO-rT-wgX" firstAttribute="centerY" secondItem="FpW-9S-9g9" secondAttribute="centerY" id="Yln-uV-UcI"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -703,6 +704,7 @@
                     <connections>
                         <outlet property="contactCollectionView" destination="DeX-bO-wUx" id="BAc-mR-Ddw"/>
                         <outlet property="headerView" destination="25h-Nb-1b0" id="Gb5-Go-NFM"/>
+                        <outlet property="notificationView" destination="lhO-rT-wgX" id="qwA-dV-ypT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdn-5q-Wga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -717,7 +719,6 @@
         <image name="contact" width="24" height="24"/>
         <image name="contactIcon" width="24" height="24"/>
         <image name="locationIcon" width="24" height="24"/>
-        <image name="notificationLogo" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

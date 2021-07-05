@@ -8,7 +8,6 @@ class InvestmentViewController: TabViewController, InvestmentDisplayLogic {
     var interactor: InvestmentBusinessLogic?
     var router: (NSObjectProtocol & InvestmentRoutingLogic & InvestmentDataPassing)?
     @IBOutlet weak var chartView: PieChartView!
-    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var savingView: InvestmentView!
     @IBOutlet weak var stockView: InvestmentView!
     @IBOutlet weak var fundView: InvestmentView!

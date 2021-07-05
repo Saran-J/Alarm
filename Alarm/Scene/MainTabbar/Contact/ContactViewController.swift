@@ -8,7 +8,6 @@ class ContactViewController: TabViewController, ContactDisplayLogic {
     var router: (NSObjectProtocol & ContactRoutingLogic & ContactDataPassing)?
     
     @IBOutlet weak var contactCollectionView: UICollectionView!
-    @IBOutlet weak var headerView: UIView!
     
     let contactData: [ContactModel] = [
         ContactModel(

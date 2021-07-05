@@ -54,20 +54,21 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hW-4X-pdo" customClass="RoundCornerView" customModule="Alarm" customModuleProvider="target">
                                         <rect key="frame" x="365" y="52" width="126" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notificationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-Ta-NJb">
-                                                <rect key="frame" x="15" y="14" width="24" height="24"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKI-du-Hvs" customClass="NotificationIconView" customModule="Alarm" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="4" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="fJk-1H-JUV"/>
-                                                    <constraint firstAttribute="width" constant="24" id="wdP-GH-Usr"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Dym-zn-dVx"/>
+                                                    <constraint firstAttribute="width" constant="40" id="fNa-Cc-UfW"/>
                                                 </constraints>
-                                            </imageView>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="bKI-du-Hvs" firstAttribute="leading" secondItem="3hW-4X-pdo" secondAttribute="leading" constant="8" id="PEG-mn-bpj"/>
                                             <constraint firstAttribute="height" constant="48" id="bOy-eU-zct"/>
-                                            <constraint firstItem="Cae-Ta-NJb" firstAttribute="top" secondItem="3hW-4X-pdo" secondAttribute="top" constant="14" id="g7b-Fm-A5N"/>
                                             <constraint firstAttribute="width" constant="126" id="tKg-YI-w88"/>
-                                            <constraint firstItem="Cae-Ta-NJb" firstAttribute="leading" secondItem="3hW-4X-pdo" secondAttribute="leading" constant="15" id="yEv-VA-Olb"/>
+                                            <constraint firstItem="bKI-du-Hvs" firstAttribute="centerY" secondItem="3hW-4X-pdo" secondAttribute="centerY" id="wps-Z3-YcX"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -712,8 +713,9 @@ Inter Wallet</string>
                     <navigationItem key="navigationItem" id="ApD-RQ-uE1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="headerView" destination="1DU-hq-ZIN" id="eq5-hp-sMX"/>
+                        <outlet property="headerView" destination="1DU-hq-ZIN" id="Hna-Jz-ZqT"/>
                         <outlet property="newsCollectionView" destination="duO-GA-OAv" id="Tw8-Ej-lke"/>
+                        <outlet property="notificationView" destination="bKI-du-Hvs" id="Ier-hz-0rP"/>
                         <outlet property="privilegeCollectionView" destination="OYf-mD-3bo" id="bhz-EN-Apd"/>
                         <outlet property="promotionCollectionView" destination="dVX-hS-wUo" id="cqe-2d-qaL"/>
                     </connections>
@@ -729,7 +731,6 @@ Inter Wallet</string>
         <image name="derivatives" width="164" height="192"/>
         <image name="interwallet" width="163" height="192"/>
         <image name="mutalfund" width="163" height="192"/>
-        <image name="notificationLogo" width="24" height="24"/>
         <image name="preciousLogo" width="123.33333587646484" height="16"/>
         <image name="profile" width="24" height="24"/>
         <image name="stock" width="163" height="192"/>

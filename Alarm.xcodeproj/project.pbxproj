@@ -26,6 +26,9 @@
 		0F23E6EA268E153D00E5671B /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E6E9268E153D00E5671B /* UIFontExtension.swift */; };
 		0F23E6F0268E21C400E5671B /* InvestmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E6EF268E21C400E5671B /* InvestmentView.swift */; };
 		0F23E6F8268E21DB00E5671B /* InvestmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E6F7268E21DB00E5671B /* InvestmentView.xib */; };
+		0F37FEED2692540300DE22A9 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F37FEEC2692540300DE22A9 /* Pods_Alarm.framework */; };
+		0F800F0626936F960012726B /* NotificationIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F800F0526936F960012726B /* NotificationIconView.swift */; };
+		0F800F1126936FA90012726B /* NotificationIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F800F1026936FA90012726B /* NotificationIconView.xib */; };
 		0F8EC09E268CA7F3005F512E /* KrungthaiFast-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC096268CA7F2005F512E /* KrungthaiFast-Light.ttf */; };
 		0F8EC09F268CA7F3005F512E /* KrungthaiFast-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC097268CA7F2005F512E /* KrungthaiFast-LightItalic.ttf */; };
 		0F8EC0A0268CA7F3005F512E /* KrungthaiFast-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EC098268CA7F2005F512E /* KrungthaiFast-Bold.ttf */; };
@@ -97,7 +100,6 @@
 		0FEE7A0026923BD200D565E1 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE79FE26923BD200D565E1 /* ContactCell.swift */; };
 		0FEE7A0126923BD200D565E1 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEE79FF26923BD200D565E1 /* ContactCell.xib */; };
 		1D2932E90F2858351360067E /* Pods_AlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */; };
-		7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */; };
 		9DBE53E65F9F1BE93B8AFA3C /* Pods_Alarm_AlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +140,9 @@
 		0F23E6E9268E153D00E5671B /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		0F23E6EF268E21C400E5671B /* InvestmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentView.swift; sourceTree = "<group>"; };
 		0F23E6F7268E21DB00E5671B /* InvestmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvestmentView.xib; sourceTree = "<group>"; };
+		0F37FEEC2692540300DE22A9 /* Pods_Alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F800F0526936F960012726B /* NotificationIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationIconView.swift; sourceTree = "<group>"; };
+		0F800F1026936FA90012726B /* NotificationIconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationIconView.xib; sourceTree = "<group>"; };
 		0F8EC096268CA7F2005F512E /* KrungthaiFast-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KrungthaiFast-Light.ttf"; sourceTree = "<group>"; };
 		0F8EC097268CA7F2005F512E /* KrungthaiFast-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KrungthaiFast-LightItalic.ttf"; sourceTree = "<group>"; };
 		0F8EC098268CA7F2005F512E /* KrungthaiFast-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KrungthaiFast-Bold.ttf"; sourceTree = "<group>"; };
@@ -230,7 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DFAD1D7633FE94911F0BE54 /* Pods_Alarm.framework in Frameworks */,
+				0F37FEED2692540300DE22A9 /* Pods_Alarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +330,15 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		0F800F0426936F690012726B /* Notifiication */ = {
+			isa = PBXGroup;
+			children = (
+				0F800F0526936F960012726B /* NotificationIconView.swift */,
+				0F800F1026936FA90012726B /* NotificationIconView.xib */,
+			);
+			path = Notifiication;
+			sourceTree = "<group>";
+		};
 		0F8EC095268CA7C1005F512E /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +357,7 @@
 		0F8EC0A9268CB891005F512E /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				0F800F0426936F690012726B /* Notifiication */,
 				0F8EC0AA268CB8B4005F512E /* RoundCornerView.swift */,
 				0F8EC114268CED7E005F512E /* ShadowView.swift */,
 				0F8EC1AB268CFCA3005F512E /* GradientView.swift */,
@@ -572,6 +587,7 @@
 		7A8D6A883C6420F7990CF186 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F37FEEC2692540300DE22A9 /* Pods_Alarm.framework */,
 				C32AA0F8E89400D8FBAA668F /* Pods_Alarm.framework */,
 				A7992D6A0684887892D357C5 /* Pods_Alarm_AlarmUITests.framework */,
 				A41CF19F04C19C5832BBD9AE /* Pods_AlarmTests.framework */,
@@ -702,6 +718,7 @@
 				0FA138CA2662BB69004F6A2F /* Assets.xcassets in Resources */,
 				0F8EC157268CF9D2005F512E /* Contact.storyboard in Resources */,
 				0F8EC0A1268CA7F3005F512E /* KrungthaiFast-Regular.ttf in Resources */,
+				0F800F1126936FA90012726B /* NotificationIconView.xib in Resources */,
 				0F8EC0E8268CCCCD005F512E /* PromotionCell.xib in Resources */,
 				0F8EC0A5268CA7F3005F512E /* KrungthaiFast-UltraLight.ttf in Resources */,
 				0F8EC12F268CF8D2005F512E /* Investment.storyboard in Resources */,
@@ -918,6 +935,7 @@
 				0F8EC13C268CF948005F512E /* ProfileModels.swift in Sources */,
 				0FEE79F92692395B00D565E1 /* UDeviceExtension.swift in Sources */,
 				0F00E534268B74500095B535 /* SuggestInteractor.swift in Sources */,
+				0F800F0626936F960012726B /* NotificationIconView.swift in Sources */,
 				0F8EC13B268CF948005F512E /* ProfileRouter.swift in Sources */,
 				0FA1398F2662CFC0004F6A2F /* AroundPrivilegeWorker.swift in Sources */,
 				0FA139272662BEDF004F6A2F /* SplashScreenViewController.swift in Sources */,

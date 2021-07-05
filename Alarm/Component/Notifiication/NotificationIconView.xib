@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationIconView" customModule="Alarm" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0Ts-FF-BPh"/>
+                <outlet property="newNotification" destination="rxy-d3-amL" id="S0S-VW-BiG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notificationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-ah-Mdl">
+                    <rect key="frame" x="8" y="8" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="cA9-dX-2Vn"/>
+                        <constraint firstAttribute="width" constant="24" id="fbF-Di-U8p"/>
+                    </constraints>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxy-d3-amL" customClass="RoundCornerView" customModule="Alarm" customModuleProvider="target">
+                    <rect key="frame" x="19" y="4" width="13" height="13"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="Q4h-VN-vXY"/>
+                        <constraint firstAttribute="width" constant="13" id="rA1-pP-DtW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="c3c-ah-Mdl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1zr-G5-xll"/>
+                <constraint firstAttribute="trailing" secondItem="rxy-d3-amL" secondAttribute="trailing" constant="8" id="LYN-Xo-aER"/>
+                <constraint firstItem="rxy-d3-amL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="VuE-yI-OG4"/>
+                <constraint firstItem="c3c-ah-Mdl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rBX-aW-bUs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="60.869565217391312" y="65.625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="notificationLogo" width="24" height="24"/>
+    </resources>
+</document>

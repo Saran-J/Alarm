@@ -6,6 +6,8 @@ protocol ProfileDisplayLogic: class {
 class ProfileViewController: TabViewController, ProfileDisplayLogic {
     var interactor: ProfileBusinessLogic?
     var router: (NSObjectProtocol & ProfileRoutingLogic & ProfileDataPassing)?
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var amountlabel: UILabel!
     
     // MARK: Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -50,8 +52,65 @@ class ProfileViewController: TabViewController, ProfileDisplayLogic {
         }
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        DispatchQueue.main.async {
+            self.setupHeader()
+        }
+    }
+    
     // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupProfileImage()
+        displayAmountLabel(
+            amount: "10,000,000",
+            totalAmount: "50,000,000"
+        )
+    }
+    
+    func setupHeader() {
+        let rectShape = CAShapeLayer()
+        rectShape.bounds = self.headerView.frame
+        rectShape.position = self.headerView.center
+        rectShape.path = UIBezierPath(
+            roundedRect: self.headerView.bounds,
+            byRoundingCorners: [.bottomLeft],
+            cornerRadii: CGSize(width: 25, height: 25)
+        ).cgPath
+        self.headerView.layer.mask = rectShape
+    }
+    
+    func setupProfileImage() {
+        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+    }
+    
+    func displayAmountLabel(amount: String, totalAmount: String) {
+        let amountString = NSAttributedString(
+            string: amount,
+            attributes: [
+                NSAttributedString.Key.font: UIFont.ktbFont(
+                    size: 20,
+                    style: .bold
+                ),
+                NSAttributedString.Key.foregroundColor: UIColor.colorWithRGBA(
+                    0,
+                    166,
+                    230
+                )
+            ])
+        let totalAmountString = NSAttributedString(
+            string: "/ \(totalAmount)",
+            attributes: [
+                NSAttributedString.Key.font: UIFont.ktbFont(
+                    size: 20,
+                    style: .regular
+                ),
+                NSAttributedString.Key.foregroundColor: UIColor.black
+            ])
+        let result = NSMutableAttributedString()
+        result.append(amountString)
+        result.append(totalAmountString)
+        amountlabel.attributedText = result
     }
 }

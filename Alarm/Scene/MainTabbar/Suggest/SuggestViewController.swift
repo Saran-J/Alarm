@@ -7,8 +7,6 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
     var interactor: SuggestBusinessLogic?
     var router: (NSObjectProtocol & SuggestRoutingLogic & SuggestDataPassing)?
     
-    @IBOutlet weak var headerView: UIView!
-    
     @IBOutlet weak var privilegeCollectionView: UICollectionView!
     @IBOutlet weak var promotionCollectionView: UICollectionView!
     @IBOutlet weak var newsCollectionView: UICollectionView!
