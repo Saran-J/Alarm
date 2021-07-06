@@ -58,19 +58,6 @@ class InvestmentViewController: TabViewController, InvestmentDisplayLogic {
             .instantiateInitialViewController() as! InvestmentViewController
         return viewController
     }
-    
-    func setupHeader() {
-        let rectShape = CAShapeLayer()
-        rectShape.bounds = self.headerView.frame
-        rectShape.position = self.headerView.center
-        rectShape.path = UIBezierPath(
-            roundedRect: self.headerView.bounds,
-            byRoundingCorners: [.bottomLeft],
-            cornerRadii: CGSize(width: 25, height: 25)
-        ).cgPath
-        self.headerView.layer.mask = rectShape
-    }
-    
     func generatePieChart() {
         let dataEntries: [ChartDataEntry] =
             chartData.enumerated().map { index, data -> ChartDataEntry in

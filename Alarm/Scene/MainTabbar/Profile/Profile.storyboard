@@ -62,12 +62,21 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting" translatesAutoresizingMaskIntoConstraints="NO" id="4AE-T4-tlL">
+                                        <rect key="frame" x="311" y="64" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="EA1-fT-Ikm"/>
+                                            <constraint firstAttribute="width" constant="24" id="HbB-tc-AoC"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="iYW-MP-WiC" firstAttribute="leading" secondItem="4AE-T4-tlL" secondAttribute="trailing" constant="16" id="Jpx-DB-vBW"/>
                                     <constraint firstAttribute="trailing" secondItem="iYW-MP-WiC" secondAttribute="trailing" constant="-63" id="UgC-cC-9i1"/>
                                     <constraint firstAttribute="height" constant="126" id="Vjg-St-uz4"/>
                                     <constraint firstItem="UYw-Gy-fiD" firstAttribute="top" secondItem="ucT-RO-r94" secondAttribute="top" constant="60" id="baA-zP-ZJm"/>
+                                    <constraint firstItem="4AE-T4-tlL" firstAttribute="centerY" secondItem="iYW-MP-WiC" secondAttribute="centerY" id="bcV-3g-OLp"/>
                                     <constraint firstItem="iYW-MP-WiC" firstAttribute="top" secondItem="ucT-RO-r94" secondAttribute="top" constant="52" id="tMr-v9-dbr"/>
                                     <constraint firstItem="UYw-Gy-fiD" firstAttribute="leading" secondItem="ucT-RO-r94" secondAttribute="leading" constant="16" id="xLx-Gb-11h"/>
                                 </constraints>
@@ -82,7 +91,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU5-HO-QuO">
-                                <rect key="frame" x="0.0" y="123" width="414" height="773"/>
+                                <rect key="frame" x="0.0" y="126" width="414" height="770"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-Oh-TyI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
@@ -607,7 +616,7 @@
                             <constraint firstItem="ucT-RO-r94" firstAttribute="top" secondItem="0MV-CT-TtV" secondAttribute="top" id="KXm-vZ-ryH"/>
                             <constraint firstAttribute="bottom" secondItem="fU5-HO-QuO" secondAttribute="bottom" id="bDM-fi-6Zr"/>
                             <constraint firstItem="fU5-HO-QuO" firstAttribute="trailing" secondItem="in8-50-UUv" secondAttribute="trailing" id="kaT-iS-Rzw"/>
-                            <constraint firstItem="fU5-HO-QuO" firstAttribute="top" secondItem="0MV-CT-TtV" secondAttribute="top" constant="123" id="pVP-Yg-w94"/>
+                            <constraint firstItem="fU5-HO-QuO" firstAttribute="top" secondItem="0MV-CT-TtV" secondAttribute="top" constant="126" id="pVP-Yg-w94"/>
                             <constraint firstItem="in8-50-UUv" firstAttribute="trailing" secondItem="ucT-RO-r94" secondAttribute="trailing" id="rsF-sr-UAe"/>
                             <constraint firstItem="ucT-RO-r94" firstAttribute="leading" secondItem="in8-50-UUv" secondAttribute="leading" id="zat-wE-z5E"/>
                         </constraints>
@@ -636,6 +645,7 @@
         <image name="preciousPlusInfinite" width="186" height="16"/>
         <image name="privilege" width="343" height="141"/>
         <image name="profile" width="24" height="24"/>
+        <image name="setting" width="24" height="24"/>
         <image name="superiorPrivilege" width="343" height="141"/>
         <image name="wayuLogo" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">

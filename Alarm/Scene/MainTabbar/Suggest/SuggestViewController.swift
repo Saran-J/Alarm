@@ -10,6 +10,7 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
     @IBOutlet weak var privilegeCollectionView: UICollectionView!
     @IBOutlet weak var promotionCollectionView: UICollectionView!
     @IBOutlet weak var newsCollectionView: UICollectionView!
+    @IBOutlet weak var profileImage: UIImageView!
     let privilegeDelegate = PrivilegeDelegate()
     let promotionDelegate = PromotionDelegate()
     let newsDelegate = NewsDelegate()
@@ -27,18 +28,6 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
             bundle: nil)
             .instantiateInitialViewController() as! SuggestViewController
         return viewController
-    }
-    
-    func setupHeader() {
-        let rectShape = CAShapeLayer()
-        rectShape.bounds = self.headerView.frame
-        rectShape.position = self.headerView.center
-        rectShape.path = UIBezierPath(
-            roundedRect: self.headerView.bounds,
-            byRoundingCorners: [.bottomLeft],
-            cornerRadii: CGSize(width: 25, height: 25)
-        ).cgPath
-        self.headerView.layer.mask = rectShape
     }
     
     func setupPrivilegeCollectionView() {
@@ -92,9 +81,8 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
         newsCollectionView.delegate = self.newsDelegate
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        setupHeader()
+    func setupProfileImageView() {
+        profileImage.layer.cornerRadius = profileImage.frame.width / 2
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -131,6 +119,7 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
         setupPrivilegeCollectionView()
         setupPromotionCollectionView()
         setupNewsCollectionView()
+        setupProfileImageView()
     }
     
     @IBAction func onClickPrivilege() {
