@@ -123,7 +123,7 @@ class SuggestViewController: TabViewController, SuggestDisplayLogic {
     }
     
     @IBAction func onClickPrivilege() {
-        let aroundVC = AroundPrivilegeViewController.initFromStoryboard()
-        onRoute.accept(aroundVC)
+        let nearByVC = NearByPrivilegeViewController.initFromStoryboard()
+        onRoute.accept(nearByVC)
     }
 }

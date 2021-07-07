@@ -50,6 +50,7 @@ class BaseService<Type: TargetType, Resp: Codable> {
 
 public struct ServiceError: Error {
     var type: ErrorType
+    var description: String = ""
     init(_ type: ErrorType) {
         self.type = type
     }

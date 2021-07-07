@@ -703,7 +703,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="contactCollectionView" destination="DeX-bO-wUx" id="BAc-mR-Ddw"/>
-                        <outlet property="headerView" destination="25h-Nb-1b0" id="Gb5-Go-NFM"/>
+                        <outlet property="headerView" destination="25h-Nb-1b0" id="v3M-mz-O8c"/>
                         <outlet property="notificationView" destination="lhO-rT-wgX" id="qwA-dV-ypT"/>
                     </connections>
                 </viewController>

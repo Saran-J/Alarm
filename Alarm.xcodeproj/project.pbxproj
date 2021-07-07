@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F00E518268B6DC50095B535 /* PhotoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00E514268B6DC50095B535 /* PhotoProvider.swift */; };
-		0F00E519268B6DC50095B535 /* GetPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00E516268B6DC50095B535 /* GetPhotoService.swift */; };
+		0F00E518268B6DC50095B535 /* PrivilegeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00E514268B6DC50095B535 /* PrivilegeProvider.swift */; };
 		0F00E51A268B6DC50095B535 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00E517268B6DC50095B535 /* BaseService.swift */; };
 		0F00E51F268B6E040095B535 /* Suggest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F00E51E268B6E040095B535 /* Suggest.storyboard */; };
 		0F00E52F268B74500095B535 /* SuggestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00E529268B74500095B535 /* SuggestPresenter.swift */; };
@@ -26,6 +25,7 @@
 		0F23E6EA268E153D00E5671B /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E6E9268E153D00E5671B /* UIFontExtension.swift */; };
 		0F23E6F0268E21C400E5671B /* InvestmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23E6EF268E21C400E5671B /* InvestmentView.swift */; };
 		0F23E6F8268E21DB00E5671B /* InvestmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F23E6F7268E21DB00E5671B /* InvestmentView.xib */; };
+		0F33A4832694BD0300F23C3D /* ObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33A4822694BD0300F23C3D /* ObservableExtension.swift */; };
 		0F37FEED2692540300DE22A9 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F37FEEC2692540300DE22A9 /* Pods_Alarm.framework */; };
 		0F800F0626936F960012726B /* NotificationIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F800F0526936F960012726B /* NotificationIconView.swift */; };
 		0F800F1126936FA90012726B /* NotificationIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F800F1026936FA90012726B /* NotificationIconView.xib */; };
@@ -94,8 +94,18 @@
 		0FA139932662CFC0004F6A2F /* AroundPrivilegeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */; };
 		0FA1399B2662CFEA004F6A2F /* AroundPrivilege.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */; };
 		0FA139B02662DD4B004F6A2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA139AF2662DD4B004F6A2F /* LocationManager.swift */; };
+		0FB00E5A2694AAFB0079B8A0 /* NearByPrivilegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E592694AAFB0079B8A0 /* NearByPrivilegeViewController.swift */; };
+		0FB00E5F2694AB890079B8A0 /* NearByPrivilege.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB00E5E2694AB890079B8A0 /* NearByPrivilege.storyboard */; };
+		0FB00E6C2694B25F0079B8A0 /* NearByCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E6A2694B25F0079B8A0 /* NearByCell.swift */; };
+		0FB00E6D2694B25F0079B8A0 /* NearByCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB00E6B2694B25F0079B8A0 /* NearByCell.xib */; };
+		0FB00E722694B5A00079B8A0 /* NearByPrivilegeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E712694B5A00079B8A0 /* NearByPrivilegeModel.swift */; };
+		0FB00E772694B5AD0079B8A0 /* NearByPrivilegeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E762694B5AD0079B8A0 /* NearByPrivilegeViewModel.swift */; };
+		0FB00E7C2694B6510079B8A0 /* NearByPrivilegeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7B2694B6510079B8A0 /* NearByPrivilegeService.swift */; };
+		0FB00E842694BA830079B8A0 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E832694BA830079B8A0 /* BaseViewModel.swift */; };
 		0FB9A140268E0E4C00929F6F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */; };
 		0FC26E56268D0E1D005C360A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC26E55268D0E1D005C360A /* TabViewController.swift */; };
+		0FCD70132694DB560004E95E /* PrivilegeTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD70112694DB560004E95E /* PrivilegeTypeCell.swift */; };
+		0FCD70142694DB560004E95E /* PrivilegeTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCD70122694DB560004E95E /* PrivilegeTypeCell.xib */; };
 		0FEE79F92692395B00D565E1 /* UDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE79F82692395B00D565E1 /* UDeviceExtension.swift */; };
 		0FEE7A0026923BD200D565E1 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE79FE26923BD200D565E1 /* ContactCell.swift */; };
 		0FEE7A0126923BD200D565E1 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEE79FF26923BD200D565E1 /* ContactCell.xib */; };
@@ -121,8 +131,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F00E514268B6DC50095B535 /* PhotoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoProvider.swift; sourceTree = "<group>"; };
-		0F00E516268B6DC50095B535 /* GetPhotoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPhotoService.swift; sourceTree = "<group>"; };
+		0F00E514268B6DC50095B535 /* PrivilegeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivilegeProvider.swift; sourceTree = "<group>"; };
 		0F00E517268B6DC50095B535 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		0F00E51E268B6E040095B535 /* Suggest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Suggest.storyboard; sourceTree = "<group>"; };
 		0F00E529268B74500095B535 /* SuggestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestPresenter.swift; sourceTree = "<group>"; };
@@ -140,6 +149,7 @@
 		0F23E6E9268E153D00E5671B /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		0F23E6EF268E21C400E5671B /* InvestmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentView.swift; sourceTree = "<group>"; };
 		0F23E6F7268E21DB00E5671B /* InvestmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvestmentView.xib; sourceTree = "<group>"; };
+		0F33A4822694BD0300F23C3D /* ObservableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableExtension.swift; sourceTree = "<group>"; };
 		0F37FEEC2692540300DE22A9 /* Pods_Alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F800F0526936F960012726B /* NotificationIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationIconView.swift; sourceTree = "<group>"; };
 		0F800F1026936FA90012726B /* NotificationIconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationIconView.xib; sourceTree = "<group>"; };
@@ -214,8 +224,18 @@
 		0FA1398D2662CFC0004F6A2F /* AroundPrivilegeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundPrivilegeInteractor.swift; sourceTree = "<group>"; };
 		0FA1399A2662CFEA004F6A2F /* AroundPrivilege.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AroundPrivilege.storyboard; sourceTree = "<group>"; };
 		0FA139AF2662DD4B004F6A2F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0FB00E592694AAFB0079B8A0 /* NearByPrivilegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByPrivilegeViewController.swift; sourceTree = "<group>"; };
+		0FB00E5E2694AB890079B8A0 /* NearByPrivilege.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NearByPrivilege.storyboard; sourceTree = "<group>"; };
+		0FB00E6A2694B25F0079B8A0 /* NearByCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByCell.swift; sourceTree = "<group>"; };
+		0FB00E6B2694B25F0079B8A0 /* NearByCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearByCell.xib; sourceTree = "<group>"; };
+		0FB00E712694B5A00079B8A0 /* NearByPrivilegeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByPrivilegeModel.swift; sourceTree = "<group>"; };
+		0FB00E762694B5AD0079B8A0 /* NearByPrivilegeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByPrivilegeViewModel.swift; sourceTree = "<group>"; };
+		0FB00E7B2694B6510079B8A0 /* NearByPrivilegeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByPrivilegeService.swift; sourceTree = "<group>"; };
+		0FB00E832694BA830079B8A0 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0FC26E55268D0E1D005C360A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		0FCD70112694DB560004E95E /* PrivilegeTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivilegeTypeCell.swift; sourceTree = "<group>"; };
+		0FCD70122694DB560004E95E /* PrivilegeTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivilegeTypeCell.xib; sourceTree = "<group>"; };
 		0FEE79F82692395B00D565E1 /* UDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDeviceExtension.swift; sourceTree = "<group>"; };
 		0FEE79FE26923BD200D565E1 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		0FEE79FF26923BD200D565E1 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
@@ -277,7 +297,7 @@
 		0F00E513268B6DC50095B535 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				0F00E514268B6DC50095B535 /* PhotoProvider.swift */,
+				0F00E514268B6DC50095B535 /* PrivilegeProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -285,8 +305,8 @@
 		0F00E515268B6DC50095B535 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				0F00E516268B6DC50095B535 /* GetPhotoService.swift */,
 				0F00E517268B6DC50095B535 /* BaseService.swift */,
+				0FB00E7B2694B6510079B8A0 /* NearByPrivilegeService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -317,6 +337,7 @@
 				0FB9A13F268E0E4C00929F6F /* UIColorExtension.swift */,
 				0F23E6E9268E153D00E5671B /* UIFontExtension.swift */,
 				0FEE79F82692395B00D565E1 /* UDeviceExtension.swift */,
+				0F33A4822694BD0300F23C3D /* ObservableExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -515,6 +536,7 @@
 		0FA139402662C9EA004F6A2F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0FB00E582694AAD20079B8A0 /* NearByPrivilege */,
 				0F8EC0B2268CBBE9005F512E /* Model */,
 				0F04459326655A7100B5B43C /* ValidatePin */,
 				0F04459226655A5C00B5B43C /* Register */,
@@ -522,6 +544,7 @@
 				0FA139872662CFAC004F6A2F /* AroundPrivilege */,
 				0FA139412662CA1E004F6A2F /* MainTabbar */,
 				0FA139192662BEC5004F6A2F /* SplashScreen */,
+				0FB00E832694BA830079B8A0 /* BaseViewModel.swift */,
 				0FA139472662CAAD004F6A2F /* BaseViewController.swift */,
 			);
 			path = Scene;
@@ -560,6 +583,29 @@
 				0FA139AF2662DD4B004F6A2F /* LocationManager.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		0FB00E582694AAD20079B8A0 /* NearByPrivilege */ = {
+			isa = PBXGroup;
+			children = (
+				0FB00E662694AFDA0079B8A0 /* cell */,
+				0FB00E592694AAFB0079B8A0 /* NearByPrivilegeViewController.swift */,
+				0FB00E5E2694AB890079B8A0 /* NearByPrivilege.storyboard */,
+				0FB00E712694B5A00079B8A0 /* NearByPrivilegeModel.swift */,
+				0FB00E762694B5AD0079B8A0 /* NearByPrivilegeViewModel.swift */,
+			);
+			path = NearByPrivilege;
+			sourceTree = "<group>";
+		};
+		0FB00E662694AFDA0079B8A0 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0FB00E6A2694B25F0079B8A0 /* NearByCell.swift */,
+				0FB00E6B2694B25F0079B8A0 /* NearByCell.xib */,
+				0FCD70112694DB560004E95E /* PrivilegeTypeCell.swift */,
+				0FCD70122694DB560004E95E /* PrivilegeTypeCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		0FEE79FD26923B9F00D565E1 /* cell */ = {
@@ -707,7 +753,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8EC0A2268CA7F3005F512E /* KrungthaiFast-Italic.ttf in Resources */,
+				0FB00E5F2694AB890079B8A0 /* NearByPrivilege.storyboard in Resources */,
 				0F8EC143268CF953005F512E /* Profile.storyboard in Resources */,
+				0FCD70142694DB560004E95E /* PrivilegeTypeCell.xib in Resources */,
 				0FA138CD2662BB69004F6A2F /* LaunchScreen.storyboard in Resources */,
 				0F8EC0D4268CC73D005F512E /* BlankCell.xib in Resources */,
 				0F8EC09E268CA7F3005F512E /* KrungthaiFast-Light.ttf in Resources */,
@@ -725,6 +773,7 @@
 				0F23E6F8268E21DB00E5671B /* InvestmentView.xib in Resources */,
 				0F8EC0EF268CDA3B005F512E /* NewsCell.xib in Resources */,
 				0F8EC0C4268CBCCE005F512E /* PrivilegeCell.xib in Resources */,
+				0FB00E6D2694B25F0079B8A0 /* NearByCell.xib in Resources */,
 				0F00E51F268B6E040095B535 /* Suggest.storyboard in Resources */,
 				0FA138C52662BB68004F6A2F /* SplashScreen.storyboard in Resources */,
 				0F8EC09F268CA7F3005F512E /* KrungthaiFast-LightItalic.ttf in Resources */,
@@ -916,17 +965,19 @@
 				0F04459D26655BE100B5B43C /* RegisterModels.swift in Sources */,
 				0F8EC0C3268CBCCE005F512E /* PrivilegeCell.swift in Sources */,
 				0F04459B26655BE100B5B43C /* RegisterWorker.swift in Sources */,
-				0F00E518268B6DC50095B535 /* PhotoProvider.swift in Sources */,
-				0F00E519268B6DC50095B535 /* GetPhotoService.swift in Sources */,
+				0F00E518268B6DC50095B535 /* PrivilegeProvider.swift in Sources */,
+				0FB00E842694BA830079B8A0 /* BaseViewModel.swift in Sources */,
 				0F8EC0D3268CC73D005F512E /* BlankCell.swift in Sources */,
 				0F8EC1AC268CFCA3005F512E /* GradientView.swift in Sources */,
 				0F8EC13A268CF948005F512E /* ProfileWorker.swift in Sources */,
 				0FA139242662BEDF004F6A2F /* SplashScreenWorker.swift in Sources */,
+				0FB00E5A2694AAFB0079B8A0 /* NearByPrivilegeViewController.swift in Sources */,
 				0F00E530268B74500095B535 /* SuggestWorker.swift in Sources */,
 				0F8EC12A268CF8C7005F512E /* InvestmentInteractor.swift in Sources */,
 				0FA139252662BEDF004F6A2F /* SplashScreenRouter.swift in Sources */,
 				0F8EC0EE268CDA3B005F512E /* NewsCell.swift in Sources */,
 				0F8EC129268CF8C7005F512E /* InvestmentViewController.swift in Sources */,
+				0FB00E772694B5AD0079B8A0 /* NearByPrivilegeViewModel.swift in Sources */,
 				0F8EC139268CF948005F512E /* ProfilePresenter.swift in Sources */,
 				0F8EC0D9268CCBD3005F512E /* PromotionDelegate.swift in Sources */,
 				0FA139432662CA4B004F6A2F /* MainTabBarController.swift in Sources */,
@@ -941,7 +992,9 @@
 				0FA139272662BEDF004F6A2F /* SplashScreenViewController.swift in Sources */,
 				0F8EC128268CF8C7005F512E /* InvestmentModels.swift in Sources */,
 				0F8EC152268CF9C1005F512E /* ContactInteractor.swift in Sources */,
+				0FCD70132694DB560004E95E /* PrivilegeTypeCell.swift in Sources */,
 				0FA139262662BEDF004F6A2F /* SplashScreenModels.swift in Sources */,
+				0FB00E722694B5A00079B8A0 /* NearByPrivilegeModel.swift in Sources */,
 				0F8EC151268CF9C1005F512E /* ContactViewController.swift in Sources */,
 				0F8EC125268CF8C7005F512E /* InvestmentPresenter.swift in Sources */,
 				0F23E6EA268E153D00E5671B /* UIFontExtension.swift in Sources */,
@@ -959,17 +1012,20 @@
 				0FA139282662BEDF004F6A2F /* SplashScreenInteractor.swift in Sources */,
 				0FC26E56268D0E1D005C360A /* TabViewController.swift in Sources */,
 				0F04459A26655BE100B5B43C /* RegisterPresenter.swift in Sources */,
+				0FB00E7C2694B6510079B8A0 /* NearByPrivilegeService.swift in Sources */,
 				0FA138C82662BB68004F6A2F /* Alarm.xcdatamodeld in Sources */,
 				0F8EC14E268CF9C1005F512E /* ContactWorker.swift in Sources */,
 				0FB9A140268E0E4C00929F6F /* UIColorExtension.swift in Sources */,
 				0F8EC14F268CF9C1005F512E /* ContactRouter.swift in Sources */,
 				0F8EC0B4268CBBFA005F512E /* Model.swift in Sources */,
 				0FA139232662BEDF004F6A2F /* SplashScreenPresenter.swift in Sources */,
+				0F33A4832694BD0300F23C3D /* ObservableExtension.swift in Sources */,
 				0F00E531268B74500095B535 /* SuggestRouter.swift in Sources */,
 				0FA139902662CFC0004F6A2F /* AroundPrivilegeRouter.swift in Sources */,
 				0F8EC0C9268CBF3C005F512E /* PrivilegeDelegate.swift in Sources */,
 				0F8EC127268CF8C7005F512E /* InvestmentRouter.swift in Sources */,
 				0F04459F26655BE100B5B43C /* RegisterInteractor.swift in Sources */,
+				0FB00E6C2694B25F0079B8A0 /* NearByCell.swift in Sources */,
 				0FA139922662CFC0004F6A2F /* AroundPrivilegeViewController.swift in Sources */,
 				0F23E6F0268E21C400E5671B /* InvestmentView.swift in Sources */,
 				0F8EC115268CED7E005F512E /* ShadowView.swift in Sources */,

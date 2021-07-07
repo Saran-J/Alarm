@@ -1,5 +1,6 @@
 import UIKit
 import JGProgressHUD
+import RxSwift
 
 protocol BaseViewControllerProtocol: class {
     func displayMessage(title: String, message: String)
@@ -13,7 +14,9 @@ protocol BaseViewControllerProtocol: class {
 }
 
 class BaseViewController: UIViewController, BaseViewControllerProtocol {
+    @IBOutlet weak var headerView: UIView?
     let hud = JGProgressHUD()
+    var disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -47,6 +50,26 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
     
     func hideLoading() {
         hud.dismiss()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        DispatchQueue.main.async {
+            self.setupHeader()
+        }
+    }
+
+    func setupHeader() {
+        guard let headerView = self.headerView else { return }
+        let rectShape = CAShapeLayer()
+        rectShape.bounds = headerView.frame
+        rectShape.position = headerView.center
+        rectShape.path = UIBezierPath(
+            roundedRect: headerView.bounds,
+            byRoundingCorners: [.bottomLeft],
+            cornerRadii: CGSize(width: 25, height: 25)
+        ).cgPath
+        headerView.layer.mask = rectShape
     }
 }
 
